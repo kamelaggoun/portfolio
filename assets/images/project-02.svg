@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Customer Sales Dashboard</title>
+  <desc id="d2">Placeholder chart: sales trend over time.</desc>
+  <rect width="480" height="300" fill="#f7f9fb"/>
+  <rect x="0.75" y="0.75" width="478.5" height="298.5" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="28" y="44" font-family="monospace" font-size="15" font-weight="600" fill="#0b1220">Sales trend</text>
+  <text x="28" y="66" font-family="monospace" font-size="11" fill="#66707f">Sample data — replace with your dashboard</text>
+  <line x1="28" y1="100" x2="452" y2="100" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 6"/>
+  <line x1="28" y1="140" x2="452" y2="140" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 6"/>
+  <line x1="28" y1="180" x2="452" y2="180" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 6"/>
+  <line x1="28" y1="220" x2="452" y2="220" stroke="#c9d3df" stroke-width="1"/>
+  <path d="M28 196 L92 176 L156 186 L220 140 L284 156 L348 112 L412 126 L452 96 L452 220 L28 220 Z" fill="#0f766e" opacity="0.08"/>
+  <path d="M28 196 L92 176 L156 186 L220 140 L284 156 L348 112 L412 126 L452 96" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="28" cy="196" r="3.5" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="220" cy="140" r="3.5" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <circle cx="452" cy="96" r="5" fill="#0f766e"/>
+  <text x="28"  y="242" font-family="monospace" font-size="10" fill="#66707f">Jan</text>
+  <text x="130" y="242" font-family="monospace" font-size="10" fill="#66707f">Apr</text>
+  <text x="232" y="242" font-family="monospace" font-size="10" fill="#66707f">Jul</text>
+  <text x="334" y="242" font-family="monospace" font-size="10" fill="#66707f">Oct</text>
+  <text x="436" y="242" font-family="monospace" font-size="10" fill="#66707f">Dec</text>
+</svg>

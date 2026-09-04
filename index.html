@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       SEO — edit the title / description / URL if you change them
+       ============================================================ -->
+  <title>Kamel Aggoun — Data Analyst | Python · SQL · Excel · Power BI</title>
+  <meta name="description"
+    content="Portfolio of Kamel Aggoun, a data analyst skilled in Python, SQL, Excel, and Power BI — turning raw data into clear analysis, dashboards, and reports.">
+  <meta name="author" content="Kamel Aggoun">
+  <meta name="keywords"
+    content="Kamel Aggoun, Data Analyst, Python, SQL, Excel, Power BI, Pandas, Matplotlib, Seaborn, Data Visualization, Business Intelligence, Dashboard, Portfolio">
+  <link rel="canonical" href="https://kamelaggoun.github.io/">
+
+  <!-- Theme color (browser chrome) -->
+  <meta name="theme-color" content="#f7f9fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets\icons\kamel.jpg">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kamelaggoun.github.io/">
+  <meta property="og:site_name" content="Kamel Aggoun — Portfolio">
+  <meta property="og:title" content="Kamel Aggoun — Data Analyst | Python · SQL · Excel · Power BI">
+  <meta property="og:description"
+    content="Turning raw data into clear analysis, dashboards, and reports. Python, SQL, Excel, and Power BI.">
+  <meta property="og:image" content="https://kamelaggoun.github.io/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kamel Aggoun — Data Analyst">
+  <meta name="twitter:description"
+    content="Turning raw data into clear analysis, dashboards, and reports. Python, SQL, Excel, and Power BI.">
+  <meta name="twitter:image" content="https://kamelaggoun.github.io/assets/images/og-image.png">
+
+  <!-- Fonts (with system fallbacks so the site degrades gracefully offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Theme bootstrap: apply stored/system theme before first paint (no flash) -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+      } catch (e) { /* keep default light theme */ }
+    })();
+  </script>
+
+  <!-- Behaviour (enhancement only — the site works without it) -->
+  <script src="js/script.js" defer></script>
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kamel Aggoun",
+    "jobTitle": "Data Analyst",
+    "url": "https://kamelaggoun.github.io/",
+    "email": "mailto:kamel9aggoun@gmail.com",
+    "knowsAbout": [
+      "Data Analysis", "SQL", "Python", "Microsoft Excel", "Power BI",
+      "Data Visualization", "Business Intelligence", "Reporting"
+    ],
+    "sameAs": [
+      "https://github.com/kamelaggoun",
+      "https://linkedin.com/in/kimou9551"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Kamel Aggoun — back to top">
+        <span class="logo-mark" aria-hidden="true">KA</span>
+        <span class="logo-name">Kamel Aggoun</span>
+      </a>
+
+      <!-- Mobile menu toggle (works without JavaScript via the checkbox hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-links" id="primary-nav">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4">
+            </path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Data Analyst · Business Intelligence</p>
+          <h1 class="hero-name" id="hero-heading">Kamel Aggoun</h1>
+          <p class="hero-role">Data Analyst&ensp;|&ensp;Python&ensp;|&ensp;SQL&ensp;|&ensp;Excel&ensp;|&ensp;Power BI
+          </p>
+          <p class="hero-lead">
+            I turn raw data into clear insights. With a solid command of Python, SQL,
+            Excel, and Power BI — and a background in English language and literature —
+            I build analyses, dashboards, and reports that help teams understand their
+            data and act on it.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              View Projects
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <a class="btn btn-outline" href="assets/cv/Kamel-Aggoun-CV.pdf" download>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"></path>
+              </svg>
+              Download CV
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="hero-loc">
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Khenchela, Algeria
+            </span>
+            <span class="hero-links">
+              <a class="icon-link" href="https://github.com/kamelaggoun" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                  </path>
+                </svg>
+              </a>
+              <a class="icon-link" href="https://linkedin.com/in/kimou9551" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                  </path>
+                </svg>
+              </a>
+              <a class="icon-link" href="mailto:kamel9aggoun@gmail.com" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m2 7 10 6 10-6"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <!-- Subtle data-analytics visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="hero-dash" viewBox="0 0 420 300" role="img" aria-labelledby="dash-title dash-desc">
+            <title id="dash-title">Analytics dashboard illustration</title>
+            <desc id="dash-desc">A stylized dashboard showing a line chart and bar chart representing data analysis and
+              business intelligence.</desc>
+
+            <rect class="viz-card" x="8" y="8" width="404" height="284" rx="14" />
+            <circle class="viz-dot" cx="26" cy="26" r="3" />
+            <circle class="viz-dot" cx="38" cy="26" r="3" />
+            <circle class="viz-dot" cx="50" cy="26" r="3" />
+            <text class="viz-title" x="64" y="30">Monthly performance</text>
+            <rect class="viz-chip" x="296" y="15" width="104" height="22" rx="11" />
+            <circle class="viz-chip-dot" cx="310" cy="26" r="3.5" />
+            <text class="viz-chip-text" x="320" y="30">Live report</text>
+
+            <line class="viz-grid" x1="40" y1="84" x2="380" y2="84" />
+            <line class="viz-grid" x1="40" y1="118" x2="380" y2="118" />
+            <line class="viz-grid" x1="40" y1="152" x2="380" y2="152" />
+            <line class="viz-axis" x1="40" y1="186" x2="380" y2="186" />
+
+            <path class="viz-area"
+              d="M40 146 L92 120 L144 134 L196 92 L248 104 L300 66 L352 84 L380 52 L380 186 L40 186 Z" />
+            <path class="viz-line" d="M40 146 L92 120 L144 134 L196 92 L248 104 L300 66 L352 84 L380 52" />
+            <circle class="viz-point" cx="40" cy="146" r="3" />
+            <circle class="viz-point" cx="92" cy="120" r="3" />
+            <circle class="viz-point" cx="144" cy="134" r="3" />
+            <circle class="viz-point" cx="196" cy="92" r="3" />
+            <circle class="viz-point" cx="248" cy="104" r="3" />
+            <circle class="viz-point" cx="300" cy="66" r="3" />
+            <circle class="viz-point" cx="352" cy="84" r="3" />
+            <circle class="viz-point viz-point-last" cx="380" cy="52" r="4.5" />
+
+            <rect class="viz-bar" x="52" y="248" width="24" height="20" rx="3" style="--d:.05s" />
+            <rect class="viz-bar" x="88" y="234" width="24" height="34" rx="3" style="--d:.10s" />
+            <rect class="viz-bar" x="124" y="252" width="24" height="16" rx="3" style="--d:.15s" />
+            <rect class="viz-bar" x="160" y="228" width="24" height="40" rx="3" style="--d:.20s" />
+            <rect class="viz-bar" x="196" y="240" width="24" height="28" rx="3" style="--d:.25s" />
+            <rect class="viz-bar" x="232" y="222" width="24" height="46" rx="3" style="--d:.30s" />
+            <rect class="viz-bar viz-bar-accent" x="268" y="206" width="24" height="62" rx="3" style="--d:.35s" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">01 · About</p>
+          <h2 class="section-title" id="about-heading">About me</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <figure class="about-photo">
+            <img src="assets\images\kamel.jpg" alt="Portrait of Kamel Aggoun" width="400" height="400" loading="lazy">
+          </figure>
+
+          <div class="about-text">
+            <p>
+              I'm a data analyst with a background in English language and literature — a
+              combination that shapes how I work with data. I bring the technical skills to
+              extract, clean, and analyze data, and the communication skills to explain what
+              it means in clear, precise language.
+            </p>
+            <p>
+              My toolkit centers on Python (Pandas, NumPy, Matplotlib, Seaborn), SQL,
+              Microsoft Excel, and Power BI. I focus on turning raw data into reliable
+              analysis, visualizations, dashboards, and reports that support real business
+              decisions.
+            </p>
+            <p>
+              I'm currently building my portfolio with hands-on data projects and I'm open to
+              data analyst and business intelligence opportunities.
+            </p>
+          </div>
+
+          <aside class="about-side" aria-label="Quick facts">
+            <ul class="fact-list">
+              <li class="fact-item">
+                <span class="fact-label">Based in</span>
+                <span class="fact-value">Khenchela, Algeria</span>
+              </li>
+              <li class="fact-item">
+                <span class="fact-label">Languages</span>
+                <span class="fact-value">Arabic (native) · English (professional)</span>
+              </li>
+              <li class="fact-item">
+                <span class="fact-label">Focus</span>
+                <span class="fact-value">Data analysis · BI · Visualization</span>
+              </li>
+              <li class="fact-item">
+                <span class="fact-label">Open to</span>
+                <span class="fact-value">Data analyst roles &amp; collaborations</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">02 · Skills</p>
+          <h2 class="section-title" id="skills-heading">Skills &amp; tools</h2>
+          <p class="section-lead">The technologies I use to collect, clean, analyze, and present data.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data Analysis</h3>
+            <ul class="chip-list">
+              <li class="chip">Python</li>
+              <li class="chip">Pandas</li>
+              <li class="chip">NumPy</li>
+              <li class="chip">Matplotlib</li>
+              <li class="chip">Seaborn</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Databases</h3>
+            <ul class="chip-list">
+              <li class="chip">SQL</li>
+              <li class="chip">SQLite</li>
+              <li class="chip">MySQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Business Intelligence</h3>
+            <ul class="chip-list">
+              <li class="chip">Power BI</li>
+              <li class="chip">Tableau</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Productivity</h3>
+            <ul class="chip-list">
+              <li class="chip">Microsoft Excel</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group-wide">
+            <h3 class="skill-group-title">Other</h3>
+            <ul class="chip-list">
+              <li class="chip">Data Cleaning</li>
+              <li class="chip">Exploratory Data Analysis</li>
+              <li class="chip">Data Visualization</li>
+              <li class="chip">Dashboard Development</li>
+              <li class="chip">Reporting</li>
+              <li class="chip">Business Analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">03 · Projects</p>
+          <h2 class="section-title" id="projects-heading">Selected projects</h2>
+          <p class="section-lead">Click a project to expand its details — problem, insights, and results.</p>
+        </div>
+
+        <!-- Filter bar (shown only when JavaScript is available) -->
+        <div class="filters" role="group" aria-label="Filter projects by technology">
+          <button class="filter-btn is-active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="python">Python</button>
+          <button class="filter-btn" type="button" data-filter="sql">SQL</button>
+          <button class="filter-btn" type="button" data-filter="power-bi">Power BI</button>
+          <button class="filter-btn" type="button" data-filter="excel">Excel</button>
+          <button class="filter-btn" type="button" data-filter="pandas">Pandas</button>
+          <button class="filter-btn" type="button" data-filter="matplotlib">Matplotlib</button>
+        </div>
+
+        <div class="projects-list">
+          <!-- ============ PROJECT 01 · E-COMMERCE SALES ANALYSIS ============ -->
+          <article class="project-card reveal" data-tags="python pandas sql power-bi excel"
+            data-title="E-Commerce Sales Analysis">
+            <details class="project-details">
+              <summary class="project-summary">
+                <span class="project-index" aria-hidden="true">01</span>
+                <img class="project-thumb" src="assets/images/project-01.svg"
+                  alt="E-Commerce Sales Analysis — revenue, profit and margin dashboard preview" width="480"
+                  height="300" loading="lazy">
+                <h3 class="project-title">E-Commerce Sales Analysis</h3>
+                <span class="project-tagline">End-to-end analytics on a 4-year US retail dataset (9,993 line items ·
+                  5,009 orders): data cleaning, EDA, 65 SQL queries, and a 3-page Power BI dashboard.</span>
+                <span class="project-tags">
+                  <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span><span
+                    class="tag">Power BI</span><span class="tag">Excel</span>
+                </span>
+                <span class="project-chevron" aria-hidden="true"></span>
+              </summary>
+
+              <div class="project-body">
+                <div class="project-grid">
+                  <div class="project-field">
+                    <h4>Business problem</h4>
+                    <p>A US retailer keeps growing, but management can't tell from the raw order export whether that
+                      growth is profitable — or which products, categories, regions, and customers quietly destroy
+                      margin. This project answers that question end-to-end on the public Sample Superstore dataset.</p>
+                  </div>
+                  <div class="project-field">
+                    <h4>Key insights</h4>
+                    <ul>
+                      <li>Discounting is the dominant profit driver — 52% of lines are discounted and deliver 52.6% of
+                        revenue at a −2.9% margin; deep discounts (&gt;30%) alone turn −$125.0k.</li>
+                      <li>Margin erosion is non-linear: ≤10% discount keeps healthy margins, ≥20% goes negative, &gt;30%
+                        hits −48.2%.</li>
+                      <li>Furniture is a volume trap — 32.3% of revenue at 2.5% margin; Tables and Bookcases are
+                        structurally loss-making.</li>
+                      <li>301 SKUs (16%) are net unprofitable (−$156.1k), and the Central region lags at a 7.9% margin.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="project-field">
+                    <h4>Results</h4>
+                    <ul>
+                      <li>$2,296,919 revenue · $286,409 profit · 12.47% margin · 5,009 orders — every metric
+                        cross-validated in Python and SQL.</li>
+                      <li>65 SQL queries validated against pandas, 12 business-driven charts, and a 3-page Power BI
+                        dashboard with synced slicers.</li>
+                      <li>Executive report mapping each insight to a concrete recommendation (discount governance, SKU
+                        pruning, regional turnaround).</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a class="btn btn-outline" href="https://github.com/kamelaggoun/ecommerce-sales-analysis"
+                    target="_blank" rel="noopener noreferrer">GitHub repository</a>
+                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo — add link</span>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- ============ PROJECT 02 ============ -->
+          <article class="project-card reveal" data-tags="python pandas power-bi" data-title="Customer Sales Dashboard">
+            <details class="project-details">
+              <summary class="project-summary">
+                <span class="project-index" aria-hidden="true">02</span>
+                <img class="project-thumb" src="assets/images/project-02.svg"
+                  alt="Customer Sales Dashboard — sample dashboard" width="480" height="300" loading="lazy">
+                <h3 class="project-title">Customer Sales Dashboard</h3>
+                <span class="project-tagline">An interactive dashboard that summarizes customer and sales metrics for
+                  business stakeholders.</span>
+                <span class="project-tags">
+                  <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Power BI</span>
+                </span>
+                <span class="project-chevron" aria-hidden="true"></span>
+              </summary>
+
+              <div class="project-body">
+                <div class="project-grid">
+                  <div class="project-field">
+                    <h4>Business problem</h4>
+                    <p>Stakeholders need a single, up-to-date view of sales and customer metrics instead of static
+                      spreadsheets that are slow to refresh and hard to compare.</p>
+                  </div>
+                  <div class="project-field">
+                    <h4>Key insights</h4>
+                    <ul>
+                      <li>[Add insight — e.g. revenue trend over time]</li>
+                      <li>[Add insight — e.g. customer segment with highest value]</li>
+                      <li>[Add insight — e.g. regional differences in performance]</li>
+                    </ul>
+                  </div>
+                  <div class="project-field">
+                    <h4>Results</h4>
+                    <ul>
+                      <li>[Add outcome — e.g. automated data pipeline in Pandas]</li>
+                      <li>[Add outcome — e.g. dashboard adopted for weekly reviews]</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a class="btn btn-outline" href="https://github.com/kamelaggoun" target="_blank"
+                    rel="noopener noreferrer">GitHub repository</a>
+                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo — add link</span>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- ============ PROJECT 03 ============ -->
+          <article class="project-card reveal" data-tags="python sql matplotlib" data-title="Data Analysis Project">
+            <details class="project-details">
+              <summary class="project-summary">
+                <span class="project-index" aria-hidden="true">03</span>
+                <img class="project-thumb" src="assets/images/project-03.svg" alt="Data Analysis Project — sample chart"
+                  width="480" height="300" loading="lazy">
+                <h3 class="project-title">Data Analysis Project</h3>
+                <span class="project-tagline">An end-to-end analysis workflow — from raw data to cleaning, exploration,
+                  visualization, and findings.</span>
+                <span class="project-tags">
+                  <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Matplotlib</span>
+                </span>
+                <span class="project-chevron" aria-hidden="true"></span>
+              </summary>
+
+              <div class="project-body">
+                <div class="project-grid">
+                  <div class="project-field">
+                    <h4>Business problem</h4>
+                    <p>[Add the business problem this project addresses — e.g. which factors most influence a key
+                      metric.]</p>
+                  </div>
+                  <div class="project-field">
+                    <h4>Key insights</h4>
+                    <ul>
+                      <li>[Add insight — e.g. strongest correlations found]</li>
+                      <li>[Add insight — e.g. surprising patterns in the data]</li>
+                    </ul>
+                  </div>
+                  <div class="project-field">
+                    <h4>Results</h4>
+                    <ul>
+                      <li>[Add outcome — e.g. reproducible analysis notebook]</li>
+                      <li>[Add outcome — e.g. clear visual summary of findings]</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a class="btn btn-outline" href="https://github.com/kamelaggoun" target="_blank"
+                    rel="noopener noreferrer">GitHub repository</a>
+                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo — add link</span>
+                </div>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">04 · Experience</p>
+          <h2 class="section-title" id="experience-heading">Experience</h2>
+          <p class="section-lead">Professional activities across data analysis, teaching, and independent work.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Data Analysis</h3>
+                <span class="timeline-period">Independent · Oct 2021 – Present</span>
+              </div>
+              <p class="timeline-desc">
+                Self-directed data-analysis work applying Python (Pandas, NumPy, Matplotlib),
+                SQL, Excel, and Power BI to explore datasets, build dashboards, and communicate findings.
+              </p>
+              <ul class="timeline-list">
+                <li>Cleaning and preparing datasets for analysis</li>
+                <li>Building exploratory analyses and visualizations</li>
+                <li>Designing dashboards and reports in Power BI and Excel</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">English Language Teaching</h3>
+                <span class="timeline-period"><span class="placeholder">[Add employer]</span> · Oct 2019 – Feb
+                  2021</span>
+              </div>
+              <p class="timeline-desc">
+                Teaching English language with a focus on clear communication, structured
+                materials, and measurable learner progress.
+              </p>
+              <ul class="timeline-list">
+                <li>Planning and delivering lessons</li>
+                <li>Preparing learning materials and assessments</li>
+                <li>Communicating complex ideas clearly to diverse audiences</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Freelance / Independent Projects</h3>
+                <span class="timeline-period">Jul 2019 – Present</span>
+              </div>
+              <p class="timeline-desc">
+                Independent and freelance work combining analysis with clear written communication.
+              </p>
+              <ul class="timeline-list">
+                <li>Proficient in analyzing large datasets to uncover trends, optimize performance, and solve business
+                  challenges.</li>
+                <li>Skilled in creating dynamic dashboards and reports that make complex data easy to understand for
+                  stakeholders.</li>
+                <li>Experienced in data cleaning and preparation, ensuring datasets are accurate and analysis-ready.
+                </li>
+                <li>Strong knowledge of SQL for database querying and data manipulation.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">05 · Education</p>
+          <h2 class="section-title" id="education-heading">Education</h2>
+        </div>
+
+        <ol class="education-list">
+          <li class="edu-item">
+            <h3 class="edu-degree">Master's Degree</h3>
+            <span class="edu-field">English Language and Culture · English Civilization and Culture</span>
+            <span class="edu-school">Abbas Laghrour University — Khenchela</span>
+            <span class="edu-period">Sep 2019 – Jul 2021</span>
+          </li>
+          <li class="edu-item">
+            <h3 class="edu-degree">Bachelor's Degree</h3>
+            <span class="edu-field">English Language and Literature</span>
+            <span class="edu-school">Abbas Laghrour University</span>
+            <span class="edu-period">Sep 2016 – Jul 2019</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="section" id="certifications" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">06 · Certifications</p>
+          <h2 class="section-title" id="certifications-heading">Certifications</h2>
+          <p class="section-lead">Courses, learning paths, and professional certificates from LinkedIn Learning,
+            Microsoft, Udemy, and Astronomer.</p>
+        </div>
+
+        <ul class="certs-grid">
+          <li class="cert-card">
+            <h3 class="cert-cat">Data Analytics</h3>
+            <span class="cert-name">Career Essentials in Data Analysis by Microsoft and LinkedIn</span>
+            <span class="cert-issuer">Microsoft · Jun 2023</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/9d917a7f6157ad8f02f8f97eb79b97216c3b9bd60a24477217781617f3bf5efa/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Business Analysis</h3>
+            <span class="cert-name">Career Essentials in Business Analysis by Microsoft and LinkedIn</span>
+            <span class="cert-issuer">Microsoft · Dec 2024</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/52d09131879590aff9a735c1863e2781766b624b9e813b23b6d5d5a47fa2f5cf/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Professional Certificate</h3>
+            <span class="cert-name">Data Engineering Foundations Professional Certificate by Astronomer</span>
+            <span class="cert-issuer">Astronomer · Dec 2024</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/b11635364631fffbefdeaf8a469f8a67f1c17e1d50085c5677a473ed49189865/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Python</h3>
+            <span class="cert-name">Mastering NumPy, Pandas and Matplotlib - Data Manipulation Tool</span>
+            <span class="cert-issuer">Udemy · Jan 2026</span>
+            <a class="cert-link" href="https://www.udemy.com/certificate/UC-86dfe98b-2366-42b4-8362-fce0b44ff595/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">SQL</h3>
+            <span class="cert-name">SQL for Data Analysis</span>
+            <span class="cert-issuer">LinkedIn · Dec 2024</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/2f37357bd35129bc7b31c767a21e7c772885276f08d4901fb59617429034261d/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Excel</h3>
+            <span class="cert-name">Mastering Microsoft Excel A Comprehensive Guide to Boost You</span>
+            <span class="cert-issuer">Udemy · Feb 2025</span>
+            <a class="cert-link" href="https://www.udemy.com/certificate/UC-fdb9d588-0b16-4d21-8e11-78244cd26486/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Power BI</h3>
+            <span class="cert-name">Power BI Essential Training</span>
+            <span class="cert-issuer">LinkedIn · Jul 2023</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/c0538207a7ddc78849aafab50f0cc9f208e73cac3d2a3216a6c5c36c22c01e64/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Tableau</h3>
+            <span class="cert-name">Tableau for Data Scientists</span>
+            <span class="cert-issuer">LinkedIn · Dec 2024</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/7d73dca475f6efb13111a6630dfc9c3162008d33b0b4e7e3e20714bd43b142dc/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+          <li class="cert-card">
+            <h3 class="cert-cat">Learning Path</h3>
+            <span class="cert-name">Become a Data Analyst</span>
+            <span class="cert-issuer">LinkedIn · Jul 2023</span>
+            <a class="cert-link"
+              href="https://www.linkedin.com/learning/certificates/219b339031c7efd2cb35df2b34dc58ddc98b0146adf6f4b12d7e72435f1e3d7b/"
+              target="_blank" rel="noopener noreferrer">View credential</a>
+          </li>
+        </ul>
+
+        <details class="certs-more">
+          <summary class="certs-more-summary">
+            <span>All certifications</span>
+            <span class="certs-count">80 credentials</span>
+            <span class="certs-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="certs-cats">
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Data Analysis &amp; Visualization</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/9d917a7f6157ad8f02f8f97eb79b97216c3b9bd60a24477217781617f3bf5efa/"
+                    target="_blank" rel="noopener noreferrer">Career Essentials in Data Analysis by Microsoft and
+                    LinkedIn</a>
+                  <span class="cert-meta">Microsoft · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/219b339031c7efd2cb35df2b34dc58ddc98b0146adf6f4b12d7e72435f1e3d7b/"
+                    target="_blank" rel="noopener noreferrer">Become a Data Analyst</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/ed8e5a0a54d9c008b6f0845ad43e1ccbda8f74fff34ae7285a3e9098252a41de/"
+                    target="_blank" rel="noopener noreferrer">Become a Data Analytics Specialist</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/5ab4a90916e962b87f580be13219f92515f3deb3315616384d5aee871f028658/"
+                    target="_blank" rel="noopener noreferrer">Mastering Executive-Level Data Analytics</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/e43b868b92c7c638042fd92f4e55657d62c77a0c0b7ad274095026c463cbeba9/"
+                    target="_blank" rel="noopener noreferrer">Learning Data Analytics: 1 Foundations</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/ef2a7698f4c7d411922668ae1a5bdb72106e93e29e02d3aa147177faefaa4dd4/"
+                    target="_blank" rel="noopener noreferrer">Learning Data Analytics Part 2: Extending and Applying
+                    Core Knowledge</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/7c57478f7140e33c8a74c6cb57043430231c769a58e185535d130fa8dab4b622/"
+                    target="_blank" rel="noopener noreferrer">Introduction to Career Skills in Data Analytics</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/412518b1cc0ba619264753d2fa4e91bfbf62d6aabc6105e0d435d6207696776c/"
+                    target="_blank" rel="noopener noreferrer">Data Analytics: Graph Analytics</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/8b08440ce6239da860f91ffc89d8b84346c40dc11517544835a7044ba6d34d7c/"
+                    target="_blank" rel="noopener noreferrer">Data Analytics: Dashboards vs. Data Stories</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/841f55db6fa3af1b43c3ed4f15f01e4a3415622e8f184b51dd0192ab26eb0524/"
+                    target="_blank" rel="noopener noreferrer">Data Analytics for Students</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/372de8968b75b00fc44553c9608635d6f3e1a845fff10a45a40c86acd36450f3/"
+                    target="_blank" rel="noopener noreferrer">Data Fluency: Exploring and Describing Data</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/c6bb4b45d652078c85555fcc42c00af3d41b39d0058e4f30fa5c8a847c7fc7ba/"
+                    target="_blank" rel="noopener noreferrer">Learning Data Visualization</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/60df72d6ccf0766021b51b1203afed69c2a37749fa12a5b9cdb09c6a9f069fcc/"
+                    target="_blank" rel="noopener noreferrer">Data Visualization: Storytelling</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-113c5376-131d-4f45-92a4-88957eb626fc/" target="_blank"
+                    rel="noopener noreferrer">2025 Data Visualization in Tableau &amp; Python (2 Courses in 1)</a>
+                  <span class="cert-meta">Udemy · Feb 2025</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-98f64233-767f-4c59-bc55-269b6451b94e/" target="_blank"
+                    rel="noopener noreferrer">2023 Data Analysis &amp; Visualization in Python Masterclass</a>
+                  <span class="cert-meta">Udemy · 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/eda8b34ecdd63f1ed19b691e9e687bdd8c73e1458c18aa40ce4334c3db3532aa/"
+                    target="_blank" rel="noopener noreferrer">Learning Data Science: Understanding the Basics</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/cff56f305fbb172c98c70108483856cd82fafbf08d4feb695af06d5450dd06fa/"
+                    target="_blank" rel="noopener noreferrer">Data Science Foundations: Fundamentals</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b9e929c1f2f5143879cebfd88e7a981cafc5c4b45949da11fe6bbdc965524be1/"
+                    target="_blank" rel="noopener noreferrer">The Non-Technical Skills of Effective Data Scientists</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/048c275c16468c170628fbba0a572ebfbd8dabf54290a95ba92f24494a068e37/"
+                    target="_blank" rel="noopener noreferrer">Predictive Analytics Essential Training for Executives</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/6ea4f77d61de0094e553a1b335505fec9bf41cae2e31e83ea434e708e799edbd/"
+                    target="_blank" rel="noopener noreferrer">Predictive Analytics Essential Training: Data Mining</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">SQL &amp; Databases</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/2f37357bd35129bc7b31c767a21e7c772885276f08d4901fb59617429034261d/"
+                    target="_blank" rel="noopener noreferrer">SQL for Data Analysis</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/fa90d642eb506fe589daede9830facc1cac6b3e193bc0342a64f01e3b73da756/"
+                    target="_blank" rel="noopener noreferrer">SQL for Data Analysis (2020)</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/0a8b899c708486f1d95f2387a9866ac6643ef4760ffcc8c7b644546506da0bba/"
+                    target="_blank" rel="noopener noreferrer">SQL Practice: Intermediate Queries</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/ccc80c298221bc03ba87e717d32e39d20dbb8714012e9cc6f91cc7cf0c98f7dc/"
+                    target="_blank" rel="noopener noreferrer">Learning SQL Programming</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/3b241236f0b9ebc160f504fef5d94c78959e779446dcf40cfeadddc752f70a41/"
+                    target="_blank" rel="noopener noreferrer">Advance Your Skills in SQL</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b14a79c94315adff6bc2972d6304ffcdc43be91ba25d28f6590ab671c750cc1c/"
+                    target="_blank" rel="noopener noreferrer">Level Up: SQL</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/a2ba68a012a38ecd7208417b5fccb87cb4e6bb371e6235787f06a8b68624f6ca/"
+                    target="_blank" rel="noopener noreferrer">SQL: Data Reporting and Analysis</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/d142a5aa7a1e353e2ad361fb0d4c9c6d237e2b95b8f1030257ced0c25a065941/"
+                    target="_blank" rel="noopener noreferrer">Using SQL with Python</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/a01ebed066fa85bb7ddee1efe2ad78b039ac5640a04212f81c6d85b854991977/"
+                    target="_blank" rel="noopener noreferrer">From Excel to SQL</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b965505f5470db9e5427577e650167f9986bed3ffce5895bea18d42ddd038e27/"
+                    target="_blank" rel="noopener noreferrer">Choosing a Database: PostgreSQL, MySQL, Mongo, and
+                    Cloud</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/f70b310771c9481bf74ccb42a1793849c96c15890952f90d417a788168be37a5/"
+                    target="_blank" rel="noopener noreferrer">SQL Server Integration Services</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-c0d10576-ddc0-4616-8bde-17d626cefb43/" target="_blank"
+                    rel="noopener noreferrer">SQL - The Complete Introduction to SQL Programming</a>
+                  <span class="cert-meta">Udemy · Jun 2023</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Python &amp; Programming</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/bb81b0ea52d93878fff800b13d8e24af5b636f726a1b13d534bcf085bd2e8b0c/"
+                    target="_blank" rel="noopener noreferrer">Python Data Analysis</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-86dfe98b-2366-42b4-8362-fce0b44ff595/" target="_blank"
+                    rel="noopener noreferrer">Mastering NumPy, Pandas and Matplotlib - Data Manipulation Tool</a>
+                  <span class="cert-meta">Udemy · Jan 2026</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/f253e7fad5fcadd5c0c342d5b01b72bf551c8b977df1e2a7fdbab8bbdfc980ed/"
+                    target="_blank" rel="noopener noreferrer">Python for Data Engineering: from Beginner to Advanced</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/3883d159e9a6fb18482183305419e0fa5ff7bf77d7575d375d8cf8c16b971b35/"
+                    target="_blank" rel="noopener noreferrer">Data Cleaning in Python Essential Training</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/1042a24e2d7f6a26359def3d1e062ebd3fd345e29ebca15a38c03f751ec1cac1/"
+                    target="_blank" rel="noopener noreferrer">Using Python with Excel</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/5da789f164c85c4b9b9d4ab87196ab12fdf2660d71a9513079eba79c48c31d3a/"
+                    target="_blank" rel="noopener noreferrer">Advanced Analysis Using Python in Excel Copilot</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/996bf564deee9951df60c61e059a80316127b029b9c554c2ad73258a2971fd73/"
+                    target="_blank" rel="noopener noreferrer">R Essential Training: Wrangling and Visualizing Data</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Excel &amp; Spreadsheets</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-fdb9d588-0b16-4d21-8e11-78244cd26486/" target="_blank"
+                    rel="noopener noreferrer">Mastering Microsoft Excel A Comprehensive Guide to Boost You</a>
+                  <span class="cert-meta">Udemy · Feb 2025</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-27c1189c-e604-48a1-b884-02c210181e71/" target="_blank"
+                    rel="noopener noreferrer">Learn Advanced Excel: Formulas, Functions, VBA Macros</a>
+                  <span class="cert-meta">Udemy · Feb 2025</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-3c7b59e5-2d2f-4ea4-893d-5b01bdb52af4/" target="_blank"
+                    rel="noopener noreferrer">Essential Microsoft Excel VBA: Learn VBA for become Expert</a>
+                  <span class="cert-meta">Udemy · Feb 2025</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-97aead49-67cb-402e-90e3-60167469d41f/" target="_blank"
+                    rel="noopener noreferrer">Excel for Everyone: Essential Skills for Work and Life</a>
+                  <span class="cert-meta">Udemy · Jan 2025</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-857062d5-22db-4da7-9279-a44f0a5a8ba5/" target="_blank"
+                    rel="noopener noreferrer">HR Analytics using MS Excel for Human Resource Management</a>
+                  <span class="cert-meta">Udemy · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/81b8758b24b54f0f67f7a6a172b38a2b256498bc058a9eba03315892468a9ba2/"
+                    target="_blank" rel="noopener noreferrer">Excel VBA: Process Modeling</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b57c7d625a1b667606a3eb50a6dd3755253cece2bfbfcae72bfba8e898e6063d/"
+                    target="_blank" rel="noopener noreferrer">Excel VBA: Managing Files and Data</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/c8b99aeed579a6c8278c2a907938d79e4520b1333fac4f84f2f32dab1172b7fd/"
+                    target="_blank" rel="noopener noreferrer">Master Advanced Excel Data &amp; Analytics Skills</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/071da012eb133434be879c574761ed5c95aee3194720d9d5fe8a673ee8b091e8/"
+                    target="_blank" rel="noopener noreferrer">Learning Excel: Data Analysis</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/1e21b1fe1169e5fa2c59b07f0b791886fe9d10273af393e33f410809fd128a83/"
+                    target="_blank" rel="noopener noreferrer">Excel: Working Together with Power Query and Power
+                    Pivot</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/5adee440b52409a7757164ba53ad1a535cf96aad32ff59622307d9be231c0ebb/"
+                    target="_blank" rel="noopener noreferrer">Excel: Economic Analysis and Data Analytics</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/74192a6d588710b099f171f2de9b3d96faf9459dd3fa2c00af63a4ebb2c10fba/"
+                    target="_blank" rel="noopener noreferrer">Excel Statistics Essential Training: 1</a>
+                  <span class="cert-meta">LinkedIn · Jun 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-2059b9a6-c8c3-4d9b-a598-1c256a5acee4/" target="_blank"
+                    rel="noopener noreferrer">Master SPC Control Charts using MS Excel</a>
+                  <span class="cert-meta">Udemy · Feb 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/94f6d02fb2061e2d74afbf9c6e0c3d102e6010c8292df16785adb1a8c6cef9c0/"
+                    target="_blank" rel="noopener noreferrer">Machine Learning with Logistic Regression in Excel, R, and
+                    Power BI</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Power BI &amp; Tableau</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/c0538207a7ddc78849aafab50f0cc9f208e73cac3d2a3216a6c5c36c22c01e64/"
+                    target="_blank" rel="noopener noreferrer">Power BI Essential Training</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/0123de581741a8fc2a4576074c37cb12d10ed74939ddc708bf29624cf892d083/"
+                    target="_blank" rel="noopener noreferrer">Tableau Essential Training</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/7d73dca475f6efb13111a6630dfc9c3162008d33b0b4e7e3e20714bd43b142dc/"
+                    target="_blank" rel="noopener noreferrer">Tableau for Data Scientists</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/2e426feca075913cbe8857a7f2b051b3794d321d5422635c485934ea837a5204/"
+                    target="_blank" rel="noopener noreferrer">Creating Interactive Tableau Dashboards</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/cd83f811f148267a60a7a79ebdca19d33981f46be1dbf5eb92277601242a6c15/"
+                    target="_blank" rel="noopener noreferrer">From Excel to Tableau</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.udemy.com/certificate/UC-6e5e9808-cf38-447c-abce-b17d1f7a32a4/" target="_blank"
+                    rel="noopener noreferrer">Become a Data Analyst: Excel, SQL &amp; Tableau - 3-in-1 Bundle</a>
+                  <span class="cert-meta">Udemy · Jan 2025</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Business Analysis &amp; Project Management</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/52d09131879590aff9a735c1863e2781766b624b9e813b23b6d5d5a47fa2f5cf/"
+                    target="_blank" rel="noopener noreferrer">Career Essentials in Business Analysis by Microsoft and
+                    LinkedIn</a>
+                  <span class="cert-meta">Microsoft · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/4076920ef22aea669c56a163fe55e00fde56798ec2ea6ef25f2b5b605d224954/"
+                    target="_blank" rel="noopener noreferrer">Business Analysis Foundations</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/dd916635f102a8131e872f1c111664843183890705e326b9a1385da12fe2406d/"
+                    target="_blank" rel="noopener noreferrer">What Is Business Analysis?</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/687e98077e1accb5116685255c4bce0c2ac378de3466b1f94cc214aa6be96b03/"
+                    target="_blank" rel="noopener noreferrer">Business Analysis Foundations: Business Process
+                    Modeling</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/9612f479f68e6f0526edc720220208d9c9eef9e46a0180a9b19516ffdf1de8de/"
+                    target="_blank" rel="noopener noreferrer">Business Benefits Realization Foundations</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b9e8e428f28d5b4492a383d745f68010d4b63a27fb35e3277aa882a98086032b/"
+                    target="_blank" rel="noopener noreferrer">Agile Requirements Foundations</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/f8500fc04de76d1c58da24954b5846cf215dcd8ac4120079482f8001769de1a8/"
+                    target="_blank" rel="noopener noreferrer">Requirements Elicitation for Business Analysis:
+                    Stakeholder Conversations</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/68f834d0678e848826186a9539632939abc671db9c1ae08ffb9a64de48b6ae91/"
+                    target="_blank" rel="noopener noreferrer">Business Analyst and Project Manager Collaboration</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/5e894189ceeeaf6f7946d690ab8e683e77d3abe123c5924a4f8a0ef602f0e969/"
+                    target="_blank" rel="noopener noreferrer">Project Management Foundations: Requirements</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/938241115bd3c918cf851b04f5555ad08055d3f2a60dc144ebe0769c4421f3ee/"
+                    target="_blank" rel="noopener noreferrer">Managing Projects with Microsoft 365</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Data Engineering</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b11635364631fffbefdeaf8a469f8a67f1c17e1d50085c5677a473ed49189865/"
+                    target="_blank" rel="noopener noreferrer">Data Engineering Foundations Professional Certificate by
+                    Astronomer</a>
+                  <span class="cert-meta">Astronomer · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/1a8c42f8786c00a6a23976333ed1c3bd48d58f5722e4bf3570b301e7598fa1ab/"
+                    target="_blank" rel="noopener noreferrer">Hands-On Introduction: Data Engineering</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/6482b34d692c8398e4b8eae50b9cca5b6c81929a5baf077f3ca018299c0cce24/"
+                    target="_blank" rel="noopener noreferrer">Introduction to Data Warehouses</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/b8e98809d41893af7f5aa1cc8f5d1286314bcd9ada679206fb58b3cbfa043639/"
+                    target="_blank" rel="noopener noreferrer">Learning Apache Airflow</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+              </ul>
+            </div>
+            <div class="certs-cat">
+              <h4 class="certs-cat-title">Statistics, AI &amp; More</h4>
+              <ul class="certs-cat-list">
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/71ee34b2f2444b73788768788eb068e78b2e65fccd9b8d41bfed4c545774d303/"
+                    target="_blank" rel="noopener noreferrer">Statistics Foundations 1: The Basics</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/c8c00b5344885eab2cbf500951909bedf3bfd66012936ce951036783797db17c/"
+                    target="_blank" rel="noopener noreferrer">Statistics Foundations 2: Probability</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/6517d2c33e85f40ef6e027247143db44d105032971faa2e67fe7924722a39d06/"
+                    target="_blank" rel="noopener noreferrer">AI in Business Essential Training</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/cf4f09e2c70c60cf87a723404116000879fad2594f89be573368f6770f069cf5/"
+                    target="_blank" rel="noopener noreferrer">Introducing AI to Your Organization</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/a2d74f8099dc7b178d0189d817598ed70f807323ca0434ba7cfe413592091c62/"
+                    target="_blank" rel="noopener noreferrer">Managing Data with Microsoft 365</a>
+                  <span class="cert-meta">LinkedIn · Dec 2024</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link"
+                    href="https://www.linkedin.com/learning/certificates/eacfb6a2bd21a3acfa4de617e8745f4e09f201f16b56efed3796820b939e12f7/"
+                    target="_blank" rel="noopener noreferrer">Learning Data Governance</a>
+                  <span class="cert-meta">LinkedIn · Jul 2023</span>
+                </li>
+                <li class="cert-entry">
+                  <a class="cert-entry-link" href="https://academy.kudoway.com/certificates/jmg3sckrja" target="_blank"
+                    rel="noopener noreferrer">The Interpreter Journey</a>
+                  <span class="cert-meta">KUDO · Feb 2023 · Expired Feb 2024</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">07 · Contact</p>
+          <h2 class="section-title" id="contact-heading">Get in touch</h2>
+          <p class="section-lead">I'm open to data analyst and business intelligence opportunities — feel free to reach
+            out.</p>
+        </div>
+
+        <ul class="contact-grid">
+          <li class="contact-card">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m2 7 10 6 10-6"></path>
+              </svg>
+            </span>
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:kamel9aggoun@gmail.com">kamel9aggoun@gmail.com</a>
+          </li>
+          <li class="contact-card">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                </path>
+              </svg>
+            </span>
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-value" href="https://linkedin.com/in/kamelaggoun" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/kamelaggoun</a>
+          </li>
+          <li class="contact-card">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                </path>
+              </svg>
+            </span>
+            <span class="contact-label">GitHub</span>
+            <a class="contact-value" href="https://github.com/kamelaggoun" target="_blank"
+              rel="noopener noreferrer">github.com/kamelaggoun</a>
+          </li>
+          <li class="contact-card">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <path d="M14 2v6h6M16 13H8M16 17H8"></path>
+              </svg>
+            </span>
+            <span class="contact-label">CV</span>
+            <a class="contact-value" href="assets/cv/Kamel-Aggoun-CV.pdf" download>Download CV (PDF)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">KA</span>
+        <span>Kamel Aggoun — Data Analyst</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://github.com/kamelaggoun" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/kimou9551" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kamel9aggoun@gmail.com">Email</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> Kamel Aggoun. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top (shown only when JavaScript is available) -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+</body>
+
+</html>

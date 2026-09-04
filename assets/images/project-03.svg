@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="t3 d3">
+  <title id="t3">Data Analysis Project</title>
+  <desc id="d3">Placeholder chart: share of segments.</desc>
+  <rect width="480" height="300" fill="#f7f9fb"/>
+  <rect x="0.75" y="0.75" width="478.5" height="298.5" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="28" y="44" font-family="monospace" font-size="15" font-weight="600" fill="#0b1220">Share of segments</text>
+  <text x="28" y="66" font-family="monospace" font-size="11" fill="#66707f">Sample data — replace with your chart</text>
+  <circle cx="150" cy="160" r="64" fill="none" stroke="#e2e8f0" stroke-width="22"/>
+  <circle cx="150" cy="160" r="64" fill="none" stroke="#0f766e" stroke-width="22" stroke-dasharray="201 402" stroke-linecap="round" transform="rotate(-90 150 160)"/>
+  <circle cx="150" cy="160" r="64" fill="none" stroke="#5eead4" stroke-width="22" stroke-dasharray="100 402" stroke-linecap="round" transform="rotate(90 150 160)"/>
+  <circle cx="150" cy="160" r="64" fill="none" stroke="#0b1220" stroke-width="22" stroke-dasharray="101 402" stroke-linecap="round" transform="rotate(180 150 160)"/>
+  <text x="150" y="156" font-family="monospace" font-size="22" font-weight="600" fill="#0b1220" text-anchor="middle">12k</text>
+  <text x="150" y="174" font-family="monospace" font-size="10" fill="#66707f" text-anchor="middle">records</text>
+  <rect x="268" y="126" width="10" height="10" rx="2" fill="#0f766e"/>
+  <text x="286" y="135" font-family="monospace" font-size="11" fill="#66707f">Segment A</text>
+  <rect x="268" y="152" width="10" height="10" rx="2" fill="#5eead4"/>
+  <text x="286" y="161" font-family="monospace" font-size="11" fill="#66707f">Segment B</text>
+  <rect x="268" y="178" width="10" height="10" rx="2" fill="#0b1220"/>
+  <text x="286" y="187" font-family="monospace" font-size="11" fill="#66707f">Segment C</text>
+</svg>
