@@ -14,18 +14,18 @@
   <meta name="author" content="Kamel Aggoun">
   <meta name="keywords"
     content="Kamel Aggoun, Data Analyst, Python, SQL, Excel, Power BI, Pandas, Matplotlib, Seaborn, Data Visualization, Business Intelligence, Dashboard, Portfolio">
-  <link rel="canonical" href="https://kamelaggoun.github.io/">
+  <link rel="canonical" href="https://kamelaggoun.github.io/portfolio/">
 
   <!-- Theme color (browser chrome) -->
   <meta name="theme-color" content="#f7f9fb" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets\icons\kamel.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/icons/kamel.jpg">
 
   <!-- Open Graph / social sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kamelaggoun.github.io/">
+  <meta property="og:url" content="https://kamelaggoun.github.io/portfolio/">
   <meta property="og:site_name" content="Kamel Aggoun — Portfolio">
   <meta property="og:title" content="Kamel Aggoun — Data Analyst | Python · SQL · Excel · Power BI">
   <meta property="og:description"
@@ -140,10 +140,9 @@
           <p class="hero-role">Data Analyst&ensp;|&ensp;Python&ensp;|&ensp;SQL&ensp;|&ensp;Excel&ensp;|&ensp;Power BI
           </p>
           <p class="hero-lead">
-            I turn raw data into clear insights. With a solid command of Python, SQL,
-            Excel, and Power BI — and a background in English language and literature —
-            I build analyses, dashboards, and reports that help teams understand their
-            data and act on it.
+            I turn raw data into clear insights. With a solid command of Python, SQL, Excel, and Power BI,
+            plus a background in English language and literature, I build analyses, dashboards,
+            and reports that help teams understand data and make informed decisions.
           </p>
 
           <div class="hero-actions">
@@ -256,7 +255,7 @@
         <div class="about-grid">
 
           <figure class="about-photo">
-            <img src="assets\images\kamel.jpg" alt="Portrait of Kamel Aggoun" width="400" height="400" loading="lazy">
+            <img src="assets/images/kamel.jpg" alt="Portrait of Kamel Aggoun" width="400" height="400" loading="lazy">
           </figure>
 
           <div class="about-text">
@@ -368,10 +367,9 @@
         <div class="section-head">
           <p class="eyebrow">03 · Projects</p>
           <h2 class="section-title" id="projects-heading">Selected projects</h2>
-          <p class="section-lead">Click a project to expand its details — problem, insights, and results.</p>
+          <p class="section-lead">Click a project to expand its details, including the problem, insights, and results.</p>
         </div>
 
-        <!-- Filter bar (shown only when JavaScript is available) -->
         <div class="filters" role="group" aria-label="Filter projects by technology">
           <button class="filter-btn is-active" type="button" data-filter="all">All</button>
           <button class="filter-btn" type="button" data-filter="python">Python</button>
@@ -383,157 +381,218 @@
         </div>
 
         <div class="projects-list">
+
           <!-- ============ PROJECT 01 · HR Analytics ============ -->
           <article class="project-card reveal" data-tags="python pandas sql power-bi excel"
             data-title="HR Analytics">
             <details class="project-details">
               <summary class="project-summary">
                 <span class="project-index" aria-hidden="true">01</span>
-                <img class="project-thumb" src="assets/images/project-01.svg"
-                  alt="E-Commerce Sales Analysis — revenue, profit and margin dashboard preview" width="480"
-                  height="300" loading="lazy">
+
+                <img class="project-thumb"
+                  src="assets/images/project-01.svg"
+                  alt="HR Analytics dashboard showing employee attrition and workforce insights"
+                  width="480"
+                  height="300"
+                  loading="lazy">
+
                 <h3 class="project-title">HR Analytics</h3>
-                <span class="project-tagline">End-to-end HR analytics case study — Python · SQL · Power BI · Excel</span>
-                <span class="project-tags">
-                  <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span><span
-                    class="tag">Power BI</span><span class="tag">Excel</span>
+
+                <span class="project-tagline">
+                  End-to-end HR analytics case study using Python, SQL, Power BI, and Excel
                 </span>
+
+                <span class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Power BI</span>
+                  <span class="tag">Excel</span>
+                </span>
+
                 <span class="project-chevron" aria-hidden="true"></span>
               </summary>
 
               <div class="project-body">
                 <div class="project-grid">
+
                   <div class="project-field">
                     <h4>Business problem</h4>
-                    <p>Acme Corporation (a fictional case-study company; the data is the public IBM HR Analytics Employee Attrition & Performance dataset) is losing employees at 16.1% — well above the 10% benchmark management would target. Replacing an employee costs hiring fees, onboarding time and institutional knowledgeAcme Corporation (a fictional case-study company; the data is the public IBM HR Analytics Employee Attrition & Performance dataset) is losing employees at 16.1% — well above the 10% benchmark management would target. Replacing an employee costs hiring fees, onboarding time and institutional knowledge.</p>
+                    <p>
+                      Acme Corporation is a fictional case-study company based on the public
+                      IBM HR Analytics Employee Attrition &amp; Performance dataset. The analysis
+                      investigates employee attrition, identifies workforce factors associated
+                      with turnover, and translates the findings into actionable recommendations
+                      for HR management.
+                    </p>
                   </div>
+
                   <div class="project-field">
                     <h4>Key insights</h4>
                     <ul>
-                      <li>Attrition is 16.12% (237 of 1,470) — above the 10% company benchmark used in this analysis, and above the rate a mature employer would typically target.</li>
-                      <li>There is no evidence that high performers (rating 4) leave disproportionately (16.4% vs 16.1% for rating 3) — visible top-talent hemorrhage is not what this data shows.</li>
-                      <li>Low job satisfaction is strongly associated with attrition (22.8% at score 1 vs 11.3% at score 4), as is lack of training (27.8% at 0 courses vs 9.2% at 6).</li>
-                      <li>The direct payroll of leavers was ≈ $1.13M/month (≈$13.6M/yr); replacement costs (not in the data) would add to that.
+                      <li>
+                        Overall attrition is 16.12%, with 237 employees leaving out of
+                        1,470 employees in the dataset.
+                      </li>
+                      <li>
+                        High performers do not show a disproportionate attrition pattern.
+                        Attrition is 16.4% among employees with a performance rating of 4,
+                        compared with 16.1% among employees with a rating of 3.
+                      </li>
+                      <li>
+                        Job satisfaction is strongly associated with attrition. Attrition
+                        reaches 22.8% for employees with a satisfaction score of 1, compared
+                        with 11.3% for employees with a score of 4.
+                      </li>
+                      <li>
+                        Employees with fewer training opportunities show higher attrition.
+                        Attrition is 27.8% among employees with no training courses, compared
+                        with 9.2% among employees who completed 6 courses.
+                      </li>
+                      <li>
+                        The monthly income associated with employees who left the company
+                        totals approximately $1.13M, equivalent to approximately $13.6M
+                        on an annualised basis.
                       </li>
                     </ul>
                   </div>
+
                   <div class="project-field">
                     <h4>Results</h4>
                     <ul>
-                      <li>$2,296,919 revenue · $286,409 profit · 12.47% margin · 5,009 orders — every metric
-                        cross-validated in Python and SQL.</li>
-                      <li>65 SQL queries validated against pandas, 12 business-driven charts, and a 3-page Power BI
-                        dashboard with synced slicers.</li>
-                      <li>Executive report mapping each insight to a concrete recommendation (discount governance, SKU
-                        pruning, regional turnaround).</li>
+                      <li>
+                        Built an end-to-end HR analytics workflow covering data cleaning,
+                        exploratory analysis, SQL validation, KPI analysis, and Power BI reporting.
+                      </li>
+                      <li>
+                        Validated 65 SQL queries against Python and Pandas calculations
+                        to improve analytical consistency and data reliability.
+                      </li>
+                      <li>
+                        Produced 12 business-focused visualisations covering attrition,
+                        job satisfaction, training, performance, income, and workforce patterns.
+                      </li>
+                      <li>
+                        Developed a 3-page Power BI dashboard with interactive filters
+                        and synchronised slicers for HR decision-making.
+                      </li>
+                      <li>
+                        Translated the analytical findings into concrete HR recommendations
+                        focused on employee retention, satisfaction, and training.
+                      </li>
                     </ul>
                   </div>
+
                 </div>
+
                 <div class="project-links">
-                  <a class="btn btn-outline" href="https://github.com/kamelaggoun/hr-analytics"
-                    target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo — add link</span>
+                  <a class="btn btn-outline"
+                    href="https://github.com/kamelaggoun/hr-analytics"
+                    target="_blank"
+                    rel="noopener noreferrer">GitHub repository</a>
+                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
                 </div>
               </div>
             </details>
           </article>
 
-          <!-- ============ PROJECT 02 ============ -->
-          <article class="project-card reveal" data-tags="python pandas power-bi" data-title="Customer Segmentation">
+          <!-- ============ PROJECT 02 · Customer Segmentation ============ -->
+          <article class="project-card reveal"
+            data-tags="python pandas sql power-bi"
+            data-title="Customer Segmentation">
             <details class="project-details">
               <summary class="project-summary">
                 <span class="project-index" aria-hidden="true">02</span>
-                <img class="project-thumb" src="assets/images/project-02.svg"
-                  alt="Customer Sales Dashboard — sample dashboard" width="480" height="300" loading="lazy">
-                <h3 class="project-title">Customer Sales Dashboard</h3>
-                <span class="project-tagline">End-to-end customer analytics on 1.07 million real e-commerce transactions: from rawinvoice lines to RFM segments, a four-page BI dashboard, and a prioritised set ofmarketing actions.</span>
-                <span class="project-tags">
-                  <span class="tag">Python</span><span class="tag">Numpy</span><span class="tag">Power BI</span>class="tag">jupyter</span>
+
+                <img class="project-thumb"
+                  src="assets/images/project-02.svg"
+                  alt="Customer Segmentation dashboard showing customer revenue and RFM insights"
+                  width="480"
+                  height="300"
+                  loading="lazy">
+
+                <h3 class="project-title">Customer Segmentation</h3>
+
+                <span class="project-tagline">
+                  End-to-end customer analytics on 1.07 million UK e-commerce transaction lines,
+                  from data cleaning to RFM segmentation and Power BI reporting
                 </span>
+
+                <span class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Power BI</span>
+                </span>
+
                 <span class="project-chevron" aria-hidden="true"></span>
               </summary>
 
               <div class="project-body">
                 <div class="project-grid">
+
                   <div class="project-field">
                     <h4>Business problem</h4>
-                    <p>A UK-based online giftware retailer sells to a mix of consumers and wholesale buyers.Management can see total revenue, but cannot see who is producing it. Marketing spend isallocated evenly across the customer base because there is no evidence for doing anythingelse.</p>
+                    <p>
+                      A UK-based online giftware retailer serves a mix of consumers and
+                      wholesale buyers. Management can see total revenue, but lacks a clear
+                      view of which customers generate that revenue. The analysis segments
+                      customers by value and behaviour to support more targeted marketing
+                      and retention decisions.
+                    </p>
                   </div>
+
                   <div class="project-field">
                     <h4>Objectives</h4>
                     <ul>
-                      <li>Turn raw transaction lines into a trustworthy, documented analytical dataset.</li>
-                      <li>Establish the commercial baseline — customers, orders, revenue, order value, frequency.</li>
-                      <li>Score every customer on Recency, Frequency and Monetary value.</li>
+                      <li>
+                        Turn raw transaction lines into a trustworthy, documented analytical dataset.
+                      </li>
+                      <li>
+                        Establish the commercial baseline, including customers, orders,
+                        revenue, order value, and purchase frequency.
+                      </li>
+                      <li>
+                        Score every customer using Recency, Frequency, and Monetary value.
+                      </li>
+                      <li>
+                        Identify high-value customer segments and translate the findings
+                        into prioritised marketing actions.
+                      </li>
                     </ul>
                   </div>
+
                   <div class="project-field">
                     <h4>Key insights</h4>
                     <ul>
-                      <li>Revenue is extremely concentrated. The top 10% of customers generate 63.2% ofnet revenue; the top 1% generate 31.1%; just 272 customers (4.6%) account for halfof all revenue. Gini coefficient 0.737.
-
-</li>
-                      <li>Champions carry the business. 1,282 customers (21.9%) produce 69.3% of revenue,averaging £8,839 each across 17.0 orders. They are the only segment whose revenue sharematerially exceeds its headcount share (efficiency index 3.16).
-
-</li>
+                      <li>
+                        Revenue is highly concentrated. The top 10% of customers generate
+                        63.2% of net revenue, while the top 1% generate 31.1%. Just 272
+                        customers, representing 4.6% of the customer base, account for half
+                        of all revenue. The Gini coefficient is 0.737.
+                      </li>
+                      <li>
+                        Champions are the highest-value segment. 1,282 customers, representing
+                        21.9% of customers, generate 69.3% of revenue, averaging £8,839 each
+                        across 17.0 orders. Their revenue share is substantially higher than
+                        their share of customers, with an efficiency index of 3.16.
+                      </li>
                     </ul>
                   </div>
+
                 </div>
+
                 <div class="project-links">
-                  <a class="btn btn-outline" href="https://github.com/kamelaggoun/customer-segmentation" target="_blank"
+                  <a class="btn btn-outline"
+                    href="https://github.com/kamelaggoun/customer-segmentation"
+                    target="_blank"
                     rel="noopener noreferrer">GitHub repository</a>
-                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo — add link</span>
+                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
                 </div>
               </div>
             </details>
           </article>
 
-          <!-- ============ PROJECT 03 ============ -->
-          <article class="project-card reveal" data-tags="python sql matplotlib" data-title="Data Analysis Project">
-            <details class="project-details">
-              <summary class="project-summary">
-                <span class="project-index" aria-hidden="true">03</span>
-                <img class="project-thumb" src="assets/images/project-03.svg" alt="Data Analysis Project — sample chart"
-                  width="480" height="300" loading="lazy">
-                <h3 class="project-title">Data Analysis Project</h3>
-                <span class="project-tagline">An end-to-end analysis workflow — from raw data to cleaning, exploration,
-                  visualization, and findings.</span>
-                <span class="project-tags">
-                  <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Matplotlib</span>
-                </span>
-                <span class="project-chevron" aria-hidden="true"></span>
-              </summary>
-
-              <div class="project-body">
-                <div class="project-grid">
-                  <div class="project-field">
-                    <h4>Business problem</h4>
-                    <p>[Add the business problem this project addresses — e.g. which factors most influence a key
-                      metric.]</p>
-                  </div>
-                  <div class="project-field">
-                    <h4>Key insights</h4>
-                    <ul>
-                      <li>[Add insight — e.g. strongest correlations found]</li>
-                      <li>[Add insight — e.g. surprising patterns in the data]</li>
-                    </ul>
-                  </div>
-                  <div class="project-field">
-                    <h4>Results</h4>
-                    <ul>
-                      <li>[Add outcome — e.g. reproducible analysis notebook]</li>
-                      <li>[Add outcome — e.g. clear visual summary of findings]</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-links">
-                  <a class="btn btn-outline" href="https://github.com/kamelaggoun" target="_blank"
-                    rel="noopener noreferrer">GitHub repository</a>
-                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo — add link</span>
-                </div>
-              </div>
-            </details>
-          </article>
         </div>
       </div>
     </section>
@@ -552,7 +611,7 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
               <div class="timeline-head">
-                <h3 class="timeline-role">Data Analysis</h3>
+                <h3 class="timeline-role">Independent Data Analysis</h3>
                 <span class="timeline-period">Independent · Oct 2021 – Present</span>
               </div>
               <p class="timeline-desc">
@@ -571,9 +630,8 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
               <div class="timeline-head">
-                <h3 class="timeline-role">English Language Teaching</h3>
-                <span class="timeline-period"><span class="placeholder">[Add employer]</span> · Oct 2019 – Feb
-                  2021</span>
+                <h3 class="timeline-role">English Teacher</h3>
+                <span class="timeline-period">Independent · Oct 2019 – Feb 2021</span>
               </div>
               <p class="timeline-desc">
                 Teaching English language with a focus on clear communication, structured
@@ -591,11 +649,11 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
               <div class="timeline-head">
-                <h3 class="timeline-role">Freelance / Independent Projects</h3>
+                <h3 class="timeline-role">Freelance Work</h3>
                 <span class="timeline-period">Jul 2019 – Present</span>
               </div>
               <p class="timeline-desc">
-                Independent and freelance work combining analysis with clear written communication.
+                Freelance and independent work combining data analysis, writing, and clear communication.
               </p>
               <ul class="timeline-list">
                 <li>Proficient in analyzing large datasets to uncover trends, optimize performance, and solve business
@@ -623,7 +681,7 @@
         <ol class="education-list">
           <li class="edu-item">
             <h3 class="edu-degree">Master's Degree</h3>
-            <span class="edu-field">English Language and Culture · English Civilization and Culture</span>
+            <span class="edu-field">English Language and Culture</span>
             <span class="edu-school">Abbas Laghrour University — Khenchela</span>
             <span class="edu-period">Sep 2019 – Jul 2021</span>
           </li>
@@ -689,7 +747,7 @@
           </li>
           <li class="cert-card">
             <h3 class="cert-cat">Excel</h3>
-            <span class="cert-name">Mastering Microsoft Excel A Comprehensive Guide to Boost You</span>
+            <span class="cert-name">Mastering Microsoft Excel: A Comprehensive Guide to Boost Your Skills</span>
             <span class="cert-issuer">Udemy · Feb 2025</span>
             <a class="cert-link" href="https://www.udemy.com/certificate/UC-fdb9d588-0b16-4d21-8e11-78244cd26486/"
               target="_blank" rel="noopener noreferrer">View credential</a>
@@ -985,7 +1043,7 @@
                 <li class="cert-entry">
                   <a class="cert-entry-link"
                     href="https://www.udemy.com/certificate/UC-fdb9d588-0b16-4d21-8e11-78244cd26486/" target="_blank"
-                    rel="noopener noreferrer">Mastering Microsoft Excel A Comprehensive Guide to Boost You</a>
+                    rel="noopener noreferrer">Mastering Microsoft Excel: A Comprehensive Guide to Boost Your Skills</a>
                   <span class="cert-meta">Udemy · Feb 2025</span>
                 </li>
                 <li class="cert-entry">
