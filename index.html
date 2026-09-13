@@ -8,7 +8,7 @@
   <!-- ============================================================
        SEO — edit the title / description / URL if you change them
        ============================================================ -->
-  <title>Kamel Aggoun — Data Analyst | Python · SQL · Excel · Power BI</title>
+  <title>Kamel Aggoun — Data Analyst | Data Analyst focused on Business Intelligence and Decision Support | Python · SQL · Excel · Power BI</title>
   <meta name="description"
     content="Portfolio of Kamel Aggoun, a data analyst skilled in Python, SQL, Excel, and Power BI — turning raw data into clear analysis, dashboards, and reports.">
   <meta name="author" content="Kamel Aggoun">
@@ -387,6 +387,406 @@
 
 <div class="projects-list">
 
+  <!-- ============ PROJECT 03 · Sales Forecasting ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi excel matplotlib"
+    data-title="Sales Forecasting &amp; Time Series Analysis">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">03</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-03.png"
+          alt="Sales forecasting and time series analysis dashboard"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Sales Forecasting &amp; Time Series Analysis</h3>
+
+        <span class="project-tagline">
+          End-to-end retail forecasting using Python, statistics, SQL, Excel, and Power BI
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Retail businesses need reliable sales forecasts for planning inventory,
+              staffing, purchasing, and revenue expectations. This project analyses
+              more than one million retail transaction records and develops a
+              time-series forecasting workflow based on historical sales patterns.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Objectives</h4>
+            <ul>
+              <li>
+                Clean and prepare large-scale retail transaction data.
+              </li>
+              <li>
+                Aggregate transactions into a chronological sales series.
+              </li>
+              <li>
+                Evaluate forecasting approaches using time-based validation.
+              </li>
+              <li>
+                Measure forecast performance with appropriate error metrics.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Processed 1,033,036 cleaned transaction lines from the
+                UCI Online Retail II dataset.
+              </li>
+              <li>
+                Built a reproducible workflow using Pandas, NumPy, Matplotlib,
+                statsmodels, and SQL.
+              </li>
+              <li>
+                Compared forecasting approaches using chronological validation
+                rather than random train-test splitting.
+              </li>
+              <li>
+                Selected a seasonal-naive forecasting approach with approximately
+                12% monthly MAPE for the analysed forecasting setup.
+              </li>
+              <li>
+                Documented the resulting KPIs and dashboard requirements for
+                Power BI and Excel reporting.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/sales-forecasting"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+  <!-- ============ PROJECT 02 · Customer Segmentation ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi"
+    data-title="Customer Segmentation">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">02</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-02.png"
+          alt="Customer Segmentation dashboard showing customer revenue and RFM insights"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Customer Segmentation</h3>
+
+        <span class="project-tagline">
+          Customer behaviour analysis on 1.07 million UK e-commerce transaction lines
+          using RFM segmentation and Power BI
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              A UK-based online giftware retailer serves a mix of consumers and
+              wholesale buyers. Management can see total revenue, but lacks a clear
+              view of which customers generate that revenue. The analysis segments
+              customers by value and behaviour to support targeted marketing and
+              retention decisions.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Key insights</h4>
+            <ul>
+              <li>
+                The top 10% of customers generate 63.2% of net revenue, while
+                the top 1% generate 31.1%.
+              </li>
+              <li>
+                Just 272 customers, representing 4.6% of the customer base,
+                account for half of total revenue.
+              </li>
+              <li>
+                The customer revenue distribution has a Gini coefficient of 0.737,
+                demonstrating substantial revenue concentration.
+              </li>
+              <li>
+                Champions represent 21.9% of customers but generate 69.3% of revenue,
+                making them the highest-priority segment for retention.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Cleaned and prepared more than one million transaction lines
+                for analytical use.
+              </li>
+              <li>
+                Established commercial KPIs covering customers, orders, revenue,
+                order value, and purchase frequency.
+              </li>
+              <li>
+                Applied Recency, Frequency, and Monetary scoring to classify customers.
+              </li>
+              <li>
+                Used SQL to validate analytical calculations and Power BI to
+                communicate the resulting customer segments.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/customer-segmentation"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+  
+  <!-- ============ PROJECT 05 · Financial Performance Analysis ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi excel"
+    data-title="Financial Performance Analysis">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">05</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-05.png"
+          alt="Financial performance analysis dashboard showing revenue, costs, margins, and profitability"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Financial Performance Analysis</h3>
+
+        <span class="project-tagline">
+          Business performance analysis covering revenue, costs, profitability,
+          margins, and expenses
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Financial performance requires a view of both revenue generation
+              and the costs required to generate it. This project examines
+              financial performance across revenue, expenses, profitability,
+              and margins to support management reporting and decision-making.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Analysis</h4>
+            <ul>
+              <li>
+                Analysed revenue and expense patterns across business dimensions.
+              </li>
+              <li>
+                Evaluated profitability and margin performance.
+              </li>
+              <li>
+                Used SQL to calculate financial KPIs and comparative metrics.
+              </li>
+              <li>
+                Applied window functions to support period and performance analysis.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Built a structured financial analysis workflow using Python,
+                Pandas, SQL, Excel, and Power BI.
+              </li>
+              <li>
+                Created reusable calculations for revenue, costs, profit,
+                and margin analysis.
+              </li>
+              <li>
+                Converted financial findings into dashboard-ready business KPIs.
+              </li>
+              <li>
+                Combined analytical calculations with clear visual reporting
+                for management-oriented interpretation.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/financial-performance-analysis"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+  <!-- ============ PROJECT 04 · SQL Business Analysis ============ -->
+  <article class="project-card reveal"
+    data-tags="sql python pandas power-bi"
+    data-title="SQL Business Analysis">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">04</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-04.png"
+          alt="SQL business analysis dashboard showing customer and business performance metrics"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">SQL Business Analysis</h3>
+
+        <span class="project-tagline">
+          Advanced SQL analysis covering data quality, customer behaviour, retention,
+          LTV, and business performance
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Business data often contains quality issues and requires more than
+              simple aggregation to answer commercial questions. This project uses
+              advanced SQL techniques to move from raw relational data to validated
+              business analysis.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Analysis</h4>
+            <ul>
+              <li>
+                Audited data quality and validated analytical assumptions.
+              </li>
+              <li>
+                Analysed customer cohorts and retention behaviour.
+              </li>
+              <li>
+                Evaluated customer lifetime value and purchasing behaviour.
+              </li>
+              <li>
+                Applied Pareto analysis to identify concentration within the business.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Built reusable SQL queries for business performance analysis.
+              </li>
+              <li>
+                Used advanced SQL techniques including aggregations,
+                subqueries, CTEs, and window functions.
+              </li>
+              <li>
+                Cross-checked SQL outputs with Python and Pandas.
+              </li>
+              <li>
+                Translated analytical results into a Power BI reporting structure
+                suitable for business stakeholders.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/sql-business-analysis"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article
+
+
   <!-- ============ PROJECT 01 · HR Analytics ============ -->
   <article class="project-card reveal"
     data-tags="python pandas sql power-bi excel"
@@ -491,408 +891,7 @@
       </div>
     </details>
   </article>
-
-
-  <!-- ============ PROJECT 02 · Customer Segmentation ============ -->
-  <article class="project-card reveal"
-    data-tags="python pandas sql power-bi"
-    data-title="Customer Segmentation">
-    <details class="project-details">
-      <summary class="project-summary">
-        <span class="project-index" aria-hidden="true">02</span>
-
-        <img class="project-thumb"
-          src="assets/images/project-02.png"
-          alt="Customer Segmentation dashboard showing customer revenue and RFM insights"
-          width="480"
-          height="300"
-          loading="lazy">
-
-        <h3 class="project-title">Customer Segmentation</h3>
-
-        <span class="project-tagline">
-          Customer behaviour analysis on 1.07 million UK e-commerce transaction lines
-          using RFM segmentation and Power BI
-        </span>
-
-        <span class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Power BI</span>
-        </span>
-
-        <span class="project-chevron" aria-hidden="true"></span>
-      </summary>
-
-      <div class="project-body">
-        <div class="project-grid">
-
-          <div class="project-field">
-            <h4>Business problem</h4>
-            <p>
-              A UK-based online giftware retailer serves a mix of consumers and
-              wholesale buyers. Management can see total revenue, but lacks a clear
-              view of which customers generate that revenue. The analysis segments
-              customers by value and behaviour to support targeted marketing and
-              retention decisions.
-            </p>
-          </div>
-
-          <div class="project-field">
-            <h4>Key insights</h4>
-            <ul>
-              <li>
-                The top 10% of customers generate 63.2% of net revenue, while
-                the top 1% generate 31.1%.
-              </li>
-              <li>
-                Just 272 customers, representing 4.6% of the customer base,
-                account for half of total revenue.
-              </li>
-              <li>
-                The customer revenue distribution has a Gini coefficient of 0.737,
-                demonstrating substantial revenue concentration.
-              </li>
-              <li>
-                Champions represent 21.9% of customers but generate 69.3% of revenue,
-                making them the highest-priority segment for retention.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-field">
-            <h4>Results</h4>
-            <ul>
-              <li>
-                Cleaned and prepared more than one million transaction lines
-                for analytical use.
-              </li>
-              <li>
-                Established commercial KPIs covering customers, orders, revenue,
-                order value, and purchase frequency.
-              </li>
-              <li>
-                Applied Recency, Frequency, and Monetary scoring to classify customers.
-              </li>
-              <li>
-                Used SQL to validate analytical calculations and Power BI to
-                communicate the resulting customer segments.
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="project-links">
-          <a class="btn btn-outline"
-            href="https://github.com/kamelaggoun/customer-segmentation"
-            target="_blank"
-            rel="noopener noreferrer">GitHub repository</a>
-          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
-        </div>
-      </div>
-    </details>
-  </article>
-
-
-  <!-- ============ PROJECT 03 · Sales Forecasting ============ -->
-  <article class="project-card reveal"
-    data-tags="python pandas sql power-bi excel matplotlib"
-    data-title="Sales Forecasting &amp; Time Series Analysis">
-    <details class="project-details">
-      <summary class="project-summary">
-        <span class="project-index" aria-hidden="true">03</span>
-
-        <img class="project-thumb"
-          src="assets/images/project-03.png"
-          alt="Sales forecasting and time series analysis dashboard"
-          width="480"
-          height="300"
-          loading="lazy">
-
-        <h3 class="project-title">Sales Forecasting &amp; Time Series Analysis</h3>
-
-        <span class="project-tagline">
-          End-to-end retail forecasting using Python, statistics, SQL, Excel, and Power BI
-        </span>
-
-        <span class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Excel</span>
-          <span class="tag">Power BI</span>
-        </span>
-
-        <span class="project-chevron" aria-hidden="true"></span>
-      </summary>
-
-      <div class="project-body">
-        <div class="project-grid">
-
-          <div class="project-field">
-            <h4>Business problem</h4>
-            <p>
-              Retail businesses need reliable sales forecasts for planning inventory,
-              staffing, purchasing, and revenue expectations. This project analyses
-              more than one million retail transaction records and develops a
-              time-series forecasting workflow based on historical sales patterns.
-            </p>
-          </div>
-
-          <div class="project-field">
-            <h4>Objectives</h4>
-            <ul>
-              <li>
-                Clean and prepare large-scale retail transaction data.
-              </li>
-              <li>
-                Aggregate transactions into a chronological sales series.
-              </li>
-              <li>
-                Evaluate forecasting approaches using time-based validation.
-              </li>
-              <li>
-                Measure forecast performance with appropriate error metrics.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-field">
-            <h4>Results</h4>
-            <ul>
-              <li>
-                Processed 1,033,036 cleaned transaction lines from the
-                UCI Online Retail II dataset.
-              </li>
-              <li>
-                Built a reproducible workflow using Pandas, NumPy, Matplotlib,
-                statsmodels, and SQL.
-              </li>
-              <li>
-                Compared forecasting approaches using chronological validation
-                rather than random train-test splitting.
-              </li>
-              <li>
-                Selected a seasonal-naive forecasting approach with approximately
-                12% monthly MAPE for the analysed forecasting setup.
-              </li>
-              <li>
-                Documented the resulting KPIs and dashboard requirements for
-                Power BI and Excel reporting.
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="project-links">
-          <a class="btn btn-outline"
-            href="https://github.com/kamelaggoun/sales-forecasting"
-            target="_blank"
-            rel="noopener noreferrer">GitHub repository</a>
-          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
-        </div>
-      </div>
-    </details>
-  </article>
-
-
-  <!-- ============ PROJECT 04 · SQL Business Analysis ============ -->
-  <article class="project-card reveal"
-    data-tags="sql python pandas power-bi"
-    data-title="SQL Business Analysis">
-    <details class="project-details">
-      <summary class="project-summary">
-        <span class="project-index" aria-hidden="true">04</span>
-
-        <img class="project-thumb"
-          src="assets/images/project-04.png"
-          alt="SQL business analysis dashboard showing customer and business performance metrics"
-          width="480"
-          height="300"
-          loading="lazy">
-
-        <h3 class="project-title">SQL Business Analysis</h3>
-
-        <span class="project-tagline">
-          Advanced SQL analysis covering data quality, customer behaviour, retention,
-          LTV, and business performance
-        </span>
-
-        <span class="project-tags">
-          <span class="tag">SQL</span>
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">Power BI</span>
-        </span>
-
-        <span class="project-chevron" aria-hidden="true"></span>
-      </summary>
-
-      <div class="project-body">
-        <div class="project-grid">
-
-          <div class="project-field">
-            <h4>Business problem</h4>
-            <p>
-              Business data often contains quality issues and requires more than
-              simple aggregation to answer commercial questions. This project uses
-              advanced SQL techniques to move from raw relational data to validated
-              business analysis.
-            </p>
-          </div>
-
-          <div class="project-field">
-            <h4>Analysis</h4>
-            <ul>
-              <li>
-                Audited data quality and validated analytical assumptions.
-              </li>
-              <li>
-                Analysed customer cohorts and retention behaviour.
-              </li>
-              <li>
-                Evaluated customer lifetime value and purchasing behaviour.
-              </li>
-              <li>
-                Applied Pareto analysis to identify concentration within the business.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-field">
-            <h4>Results</h4>
-            <ul>
-              <li>
-                Built reusable SQL queries for business performance analysis.
-              </li>
-              <li>
-                Used advanced SQL techniques including aggregations,
-                subqueries, CTEs, and window functions.
-              </li>
-              <li>
-                Cross-checked SQL outputs with Python and Pandas.
-              </li>
-              <li>
-                Translated analytical results into a Power BI reporting structure
-                suitable for business stakeholders.
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="project-links">
-          <a class="btn btn-outline"
-            href="https://github.com/kamelaggoun/sql-business-analysis"
-            target="_blank"
-            rel="noopener noreferrer">GitHub repository</a>
-          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
-        </div>
-      </div>
-    </details>
-  </article>
-
-
-  <!-- ============ PROJECT 05 · Financial Performance Analysis ============ -->
-  <article class="project-card reveal"
-    data-tags="python pandas sql power-bi excel"
-    data-title="Financial Performance Analysis">
-    <details class="project-details">
-      <summary class="project-summary">
-        <span class="project-index" aria-hidden="true">05</span>
-
-        <img class="project-thumb"
-          src="assets/images/project-05.png"
-          alt="Financial performance analysis dashboard showing revenue, costs, margins, and profitability"
-          width="480"
-          height="300"
-          loading="lazy">
-
-        <h3 class="project-title">Financial Performance Analysis</h3>
-
-        <span class="project-tagline">
-          Business performance analysis covering revenue, costs, profitability,
-          margins, and expenses
-        </span>
-
-        <span class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">Excel</span>
-        </span>
-
-        <span class="project-chevron" aria-hidden="true"></span>
-      </summary>
-
-      <div class="project-body">
-        <div class="project-grid">
-
-          <div class="project-field">
-            <h4>Business problem</h4>
-            <p>
-              Financial performance requires a view of both revenue generation
-              and the costs required to generate it. This project examines
-              financial performance across revenue, expenses, profitability,
-              and margins to support management reporting and decision-making.
-            </p>
-          </div>
-
-          <div class="project-field">
-            <h4>Analysis</h4>
-            <ul>
-              <li>
-                Analysed revenue and expense patterns across business dimensions.
-              </li>
-              <li>
-                Evaluated profitability and margin performance.
-              </li>
-              <li>
-                Used SQL to calculate financial KPIs and comparative metrics.
-              </li>
-              <li>
-                Applied window functions to support period and performance analysis.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-field">
-            <h4>Results</h4>
-            <ul>
-              <li>
-                Built a structured financial analysis workflow using Python,
-                Pandas, SQL, Excel, and Power BI.
-              </li>
-              <li>
-                Created reusable calculations for revenue, costs, profit,
-                and margin analysis.
-              </li>
-              <li>
-                Converted financial findings into dashboard-ready business KPIs.
-              </li>
-              <li>
-                Combined analytical calculations with clear visual reporting
-                for management-oriented interpretation.
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="project-links">
-          <a class="btn btn-outline"
-            href="https://github.com/kamelaggoun/financial-performance-analysis"
-            target="_blank"
-            rel="noopener noreferrer">GitHub repository</a>
-          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
-        </div>
-      </div>
-    </details>
-  </article>
+  
 
 
   <!-- ============ PROJECT 06 · Supply Chain & Inventory Analytics ============ -->
