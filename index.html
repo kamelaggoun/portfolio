@@ -1,52 +1,92 @@
+```html
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>Kamel Aggoun | Data Analyst & Business Intelligence</title>
+  <meta name="theme-color" content="#f7f9fb">
+
+  <title>Kamel Aggoun — Data Analyst | Python · SQL · Excel · Power BI</title>
 
   <meta
     name="description"
-    content="Kamel Aggoun's portfolio. Data Analyst and Business Intelligence professional specializing in Python, SQL, Excel, Power BI, data analysis, dashboards, and business reporting."
+    content="Portfolio of Kamel Aggoun, a data analyst focused on Python, SQL, Excel, Power BI, business analysis, dashboards, forecasting, and data visualization."
   >
 
   <meta
     name="keywords"
-    content="Kamel Aggoun, Data Analyst, Business Intelligence, Python, SQL, Power BI, Excel, Pandas, Data Visualization, Algeria"
+    content="Kamel Aggoun, Data Analyst, Business Intelligence, Python, SQL, Excel, Power BI, Pandas, Data Visualization, Algeria"
   >
 
   <meta name="author" content="Kamel Aggoun">
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://kamelaggoun.github.io/portfolio/">
+  <link
+    rel="canonical"
+    href="https://kamelaggoun.github.io/portfolio/"
+  >
 
-  <link rel="icon" type="image/jpeg" href="assets/icons/kamel.jpg">
+  <link
+    rel="icon"
+    type="image/jpeg"
+    href="assets/icons/kamel.jpg"
+  >
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kamel Aggoun | Data Analyst & Business Intelligence">
+
+  <meta
+    property="og:title"
+    content="Kamel Aggoun — Data Analyst"
+  >
+
   <meta
     property="og:description"
-    content="Data Analyst portfolio featuring Python, SQL, Excel, Power BI, business analysis, dashboards, and end-to-end analytics projects."
+    content="Data Analyst portfolio focused on Python, SQL, Excel, Power BI, business analysis, forecasting, and dashboards."
   >
-  <meta property="og:url" content="https://kamelaggoun.github.io/portfolio/">
-  <meta property="og:image" content="https://kamelaggoun.github.io/portfolio/assets/images/og-image.png">
+
+  <meta
+    property="og:url"
+    content="https://kamelaggoun.github.io/portfolio/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://kamelaggoun.github.io/portfolio/assets/images/og-image.png"
+  >
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kamel Aggoun | Data Analyst & Business Intelligence">
+
+  <meta
+    name="twitter:title"
+    content="Kamel Aggoun — Data Analyst"
+  >
+
   <meta
     name="twitter:description"
-    content="Data Analyst portfolio featuring Python, SQL, Excel, Power BI, business analysis, dashboards, and end-to-end analytics projects."
+    content="Data Analyst portfolio focused on Python, SQL, Excel, Power BI, business analysis, forecasting, and dashboards."
   >
-  <meta name="twitter:image" content="https://kamelaggoun.github.io/portfolio/assets/images/og-image.png">
+
+  <meta
+    name="twitter:image"
+    content="https://kamelaggoun.github.io/portfolio/assets/images/og-image.png"
+  >
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
@@ -55,8 +95,10 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Theme bootstrap -->
+  <!-- Theme -->
   <script>
+    document.documentElement.classList.add("js");
+
     (() => {
       const savedTheme = localStorage.getItem("theme");
 
@@ -71,7 +113,7 @@
     })();
   </script>
 
-  <!-- Structured data -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,8 +132,8 @@
       "Business Intelligence",
       "Python",
       "SQL",
-      "Power BI",
       "Microsoft Excel",
+      "Power BI",
       "Pandas",
       "Data Visualization",
       "Business Analysis"
@@ -104,29 +146,92 @@
   </script>
 </head>
 
-<body>
 
-  <a class="skip-link" href="#main-content">Skip to content</a>
+<body id="top">
 
-  <!-- ================= HEADER ================= -->
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+
   <header class="site-header">
+
     <div class="container header-inner">
 
-      <a class="logo" href="#top" aria-label="Kamel Aggoun home">
-        KA
+      <a
+        class="logo"
+        href="#top"
+        aria-label="Kamel Aggoun — home"
+      >
+        <span class="logo-mark">KA</span>
+        <span class="logo-name">Kamel Aggoun</span>
       </a>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+
+      <!-- Mobile navigation toggle -->
+      <input
+        class="nav-toggle-input"
+        type="checkbox"
+        id="nav-toggle"
+        aria-label="Toggle navigation"
+      >
+
+      <label
+        class="nav-toggle"
+        for="nav-toggle"
+        aria-label="Open navigation"
+      >
+        <span class="nav-toggle-bars"></span>
+      </label>
+
+
+      <!-- Navigation -->
+      <nav
+        class="site-nav"
+        aria-label="Main navigation"
+      >
+
+        <div class="nav-links">
+
+          <a class="nav-link active" href="#about">
+            About
+          </a>
+
+          <a class="nav-link" href="#skills">
+            Skills
+          </a>
+
+          <a class="nav-link" href="#projects">
+            Projects
+          </a>
+
+          <a class="nav-link" href="#experience">
+            Experience
+          </a>
+
+          <a class="nav-link" href="#education">
+            Education
+          </a>
+
+          <a class="nav-link" href="#certifications">
+            Certifications
+          </a>
+
+          <a class="nav-link" href="#contact">
+            Contact
+          </a>
+
+        </div>
+
       </nav>
 
+
+      <!-- Theme toggle -->
       <div class="header-actions">
 
         <button
@@ -136,85 +241,87 @@
           aria-label="Toggle dark mode"
           title="Toggle dark mode"
         >
-          <span aria-hidden="true">◐</span>
-        </button>
 
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          aria-controls="mobile-nav"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg
+            class="icon-moon"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.7 6.7 0 0 0 21 12.8Z"/>
+          </svg>
+
+          <svg
+            class="icon-sun"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+
         </button>
 
       </div>
 
     </div>
 
-    <nav
-      class="mobile-nav"
-      id="mobile-nav"
-      aria-label="Mobile navigation"
-      hidden
-    >
-      <a href="#about">About</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
 
   <main id="main-content">
 
-    <!-- ================= HERO ================= -->
-    <section class="hero section" id="top">
 
-      <div class="container hero-grid">
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+
+    <section class="hero">
+
+      <div class="container hero-inner">
 
         <div class="hero-content">
 
-          <p class="eyebrow">
+          <p class="hero-eyebrow">
             Data Analyst · Business Intelligence
           </p>
 
-          <h1>
+          <h1 class="hero-name">
             Kamel Aggoun
           </h1>
 
           <p class="hero-role">
-            Data Analyst specializing in
-            <span>Python</span>,
-            <span>SQL</span>,
-            <span>Excel</span>
-            and
-            <span>Power BI</span>.
+            Data Analyst | Python | SQL | Excel | Power BI
           </p>
 
-          <p class="hero-description">
-            I turn raw data into structured analysis, meaningful insights,
-            dashboards, and business-ready reports. My work focuses on
+          <p class="hero-lead">
+            I turn raw data into clear insights, analytical reports,
+            dashboards, and business-ready information. I work across
             data cleaning, exploratory analysis, SQL analytics,
-            visualization, reporting, and decision support.
+            visualization, forecasting, and Business Intelligence.
           </p>
+
 
           <div class="hero-actions">
 
-            <a class="btn btn-primary" href="#projects">
+            <a
+              class="btn btn-primary"
+              href="#projects"
+            >
               View Projects
             </a>
 
             <a
-              class="btn btn-secondary"
+              class="btn btn-outline"
               href="assets/cv/Kamel-Aggoun-CV.pdf"
               target="_blank"
               rel="noopener"
@@ -224,104 +331,229 @@
 
           </div>
 
+
           <div class="hero-meta">
 
-            <span>
+            <span class="hero-loc">
               <span aria-hidden="true">⌖</span>
               Khenchela, Algeria
             </span>
 
-            <a
-              href="https://github.com/kamelaggoun"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
 
-            <a
-              href="https://www.linkedin.com/in/kamelaggoun"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
+            <div class="hero-links">
 
-            <a href="mailto:kamel9aggoun@gmail.com">
-              Email
-            </a>
+              <a
+                class="icon-link"
+                href="https://github.com/kamelaggoun"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                GH
+              </a>
+
+              <a
+                class="icon-link"
+                href="https://www.linkedin.com/in/kamelaggoun"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                in
+              </a>
+
+              <a
+                class="icon-link"
+                href="mailto:kamel9aggoun@gmail.com"
+                aria-label="Email"
+                title="Email"
+              >
+                @
+              </a>
+
+            </div>
 
           </div>
 
         </div>
 
 
-        <div class="hero-visual" aria-hidden="true">
+        <!-- Hero analytical illustration -->
+        <div class="hero-visual">
 
-          <div class="analytics-card">
+          <svg
+            class="hero-dash"
+            viewBox="0 0 520 390"
+            role="img"
+            aria-label="Illustration of a business intelligence dashboard"
+          >
 
-            <div class="analytics-card-header">
-              <span>Business Performance</span>
-              <span class="status-dot"></span>
-            </div>
+            <!-- Main dashboard -->
+            <rect
+              class="viz-card"
+              x="20"
+              y="20"
+              width="480"
+              height="350"
+              rx="14"
+            />
 
-            <div class="analytics-value">
-              <strong>+24.8%</strong>
-              <span>YoY Growth</span>
-            </div>
+            <!-- Header -->
+            <circle class="viz-dot" cx="48" cy="50" r="4"/>
+            <circle class="viz-dot" cx="62" cy="50" r="4"/>
+            <circle class="viz-dot" cx="76" cy="50" r="4"/>
 
-            <div class="analytics-chart">
+            <text
+              class="viz-title"
+              x="48"
+              y="82"
+            >
+              Monthly Performance
+            </text>
 
-              <svg
-                viewBox="0 0 500 220"
-                role="img"
-                aria-label="Illustrative analytics chart"
-              >
 
-                <line x1="30" y1="190" x2="470" y2="190"></line>
-                <line x1="30" y1="140" x2="470" y2="140"></line>
-                <line x1="30" y1="90" x2="470" y2="90"></line>
-                <line x1="30" y1="40" x2="470" y2="40"></line>
+            <!-- Chip -->
+            <rect
+              class="viz-chip"
+              x="375"
+              y="67"
+              width="92"
+              height="24"
+              rx="12"
+            />
 
-                <polyline
-                  points="
-                    30,170
-                    90,150
-                    150,160
-                    210,110
-                    270,125
-                    330,75
-                    390,90
-                    470,42
-                  "
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></polyline>
+            <circle
+              class="viz-chip-dot"
+              cx="389"
+              cy="79"
+              r="4"
+            />
 
-                <circle cx="30" cy="170" r="6"></circle>
-                <circle cx="90" cy="150" r="6"></circle>
-                <circle cx="150" cy="160" r="6"></circle>
-                <circle cx="210" cy="110" r="6"></circle>
-                <circle cx="270" cy="125" r="6"></circle>
-                <circle cx="330" cy="75" r="6"></circle>
-                <circle cx="390" cy="90" r="6"></circle>
-                <circle cx="470" cy="42" r="6"></circle>
+            <text
+              class="viz-chip-text"
+              x="399"
+              y="83"
+            >
+              LIVE REPORT
+            </text>
 
-              </svg>
 
-            </div>
+            <!-- Grid -->
+            <line class="viz-grid" x1="55" y1="140" x2="465" y2="140"/>
+            <line class="viz-grid" x1="55" y1="190" x2="465" y2="190"/>
+            <line class="viz-grid" x1="55" y1="240" x2="465" y2="240"/>
+            <line class="viz-grid" x1="55" y1="290" x2="465" y2="290"/>
 
-            <div class="analytics-footer">
-              <span>SQL</span>
-              <span>Python</span>
-              <span>Power BI</span>
-              <span>Excel</span>
-            </div>
+            <line class="viz-axis" x1="55" y1="310" x2="465" y2="310"/>
 
-          </div>
+
+            <!-- Area -->
+            <path
+              class="viz-area"
+              d="
+                M55 270
+                L105 245
+                L155 255
+                L205 205
+                L255 220
+                L305 165
+                L355 185
+                L405 130
+                L465 105
+                L465 310
+                L55 310
+                Z
+              "
+            />
+
+
+            <!-- Line -->
+            <path
+              class="viz-line"
+              d="
+                M55 270
+                L105 245
+                L155 255
+                L205 205
+                L255 220
+                L305 165
+                L355 185
+                L405 130
+                L465 105
+              "
+            />
+
+
+            <!-- Points -->
+            <circle class="viz-point" cx="55" cy="270" r="4"/>
+            <circle class="viz-point" cx="105" cy="245" r="4"/>
+            <circle class="viz-point" cx="155" cy="255" r="4"/>
+            <circle class="viz-point" cx="205" cy="205" r="4"/>
+            <circle class="viz-point" cx="255" cy="220" r="4"/>
+            <circle class="viz-point" cx="305" cy="165" r="4"/>
+            <circle class="viz-point" cx="355" cy="185" r="4"/>
+            <circle class="viz-point" cx="405" cy="130" r="4"/>
+            <circle class="viz-point-last" cx="465" cy="105" r="5"/>
+
+
+            <!-- Bottom bars -->
+            <rect
+              class="viz-bar"
+              style="--d:0.1s"
+              x="80"
+              y="330"
+              width="18"
+              height="0"
+            />
+
+            <rect
+              class="viz-bar"
+              style="--d:0.2s"
+              x="120"
+              y="330"
+              width="18"
+              height="0"
+            />
+
+            <rect
+              class="viz-bar"
+              style="--d:0.3s"
+              x="160"
+              y="330"
+              width="18"
+              height="0"
+            />
+
+            <rect
+              class="viz-bar"
+              style="--d:0.4s"
+              x="200"
+              y="330"
+              width="18"
+              height="0"
+            />
+
+            <rect
+              class="viz-bar"
+              style="--d:0.5s"
+              x="240"
+              y="330"
+              width="18"
+              height="0"
+            />
+
+            <rect
+              class="viz-bar viz-bar-accent"
+              style="--d:0.6s"
+              x="280"
+              y="330"
+              width="18"
+              height="0"
+            />
+
+          </svg>
 
         </div>
 
@@ -330,72 +562,112 @@
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
-    <section class="section about-section" id="about">
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="about"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
-          <p class="section-kicker">01 · About</p>
-          <h2>From raw data to useful decisions.</h2>
+        <div class="section-head">
+
+          <p class="eyebrow">
+            01 · About
+          </p>
+
+          <h2>
+            Data analysis with a business focus.
+          </h2>
+
+          <p class="section-lead">
+            I combine analytical skills with clear communication to
+            transform datasets into understandable business insights.
+          </p>
+
         </div>
+
 
         <div class="about-grid">
 
-          <div class="about-image">
-            <img
-              src="assets/images/kamel.jpg"
-              alt="Kamel Aggoun"
-              loading="lazy"
-            >
-          </div>
+          <div class="about-text">
 
-          <div class="about-content">
-
-            <p class="lead">
+            <p>
               I am a Data Analyst with a background in English language
               and culture and a technical focus on data analysis and
               Business Intelligence.
             </p>
 
             <p>
-              I build end-to-end analytics projects covering data
-              cleaning, exploratory analysis, SQL, statistical analysis,
-              visualization, dashboards, and business reporting.
+              My projects cover the full analytical workflow, including
+              data cleaning, exploratory analysis, SQL querying,
+              customer segmentation, forecasting, financial analysis,
+              operational analytics, visualization, and dashboard
+              development.
             </p>
 
             <p>
-              My approach combines technical analysis with clear
-              communication. The objective is not simply to produce
-              numbers, but to explain what the data means and how it can
-              support better decisions.
+              I use Python, Pandas, SQL, Excel, Power BI, and related
+              tools to investigate data, validate results, identify
+              patterns, and communicate findings clearly.
             </p>
 
-            <div class="quick-facts">
+          </div>
 
-              <div>
-                <span class="fact-label">Location</span>
-                <strong>Khenchela, Algeria</strong>
+
+          <aside class="about-side">
+
+            <div class="fact-list">
+
+              <div class="fact-item">
+                <span class="fact-label">
+                  Location
+                </span>
+
+                <span class="fact-value">
+                  Khenchela, Algeria
+                </span>
               </div>
 
-              <div>
-                <span class="fact-label">Focus</span>
-                <strong>Data Analysis & BI</strong>
+
+              <div class="fact-item">
+                <span class="fact-label">
+                  Focus
+                </span>
+
+                <span class="fact-value">
+                  Data Analysis · Business Intelligence
+                </span>
               </div>
 
-              <div>
-                <span class="fact-label">Core Tools</span>
-                <strong>Python · SQL · Power BI · Excel</strong>
+
+              <div class="fact-item">
+                <span class="fact-label">
+                  Core Tools
+                </span>
+
+                <span class="fact-value">
+                  Python · SQL · Power BI · Excel
+                </span>
               </div>
 
-              <div>
-                <span class="fact-label">Languages</span>
-                <strong>Arabic · English · German</strong>
+
+              <div class="fact-item">
+                <span class="fact-label">
+                  Languages
+                </span>
+
+                <span class="fact-value">
+                  Arabic · English · German
+                </span>
               </div>
 
             </div>
 
-          </div>
+          </aside>
 
         </div>
 
@@ -404,719 +676,1139 @@
     </section>
 
 
-    <!-- ================= CAPABILITIES ================= -->
-    <section class="section capabilities-section" id="capabilities">
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="skills"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
-          <p class="section-kicker">02 · Capabilities</p>
-          <h2>What I can do with data.</h2>
-        </div>
+        <div class="section-head">
 
-        <div class="capabilities-grid">
+          <p class="eyebrow">
+            02 · Skills
+          </p>
 
-          <article class="capability-card">
-            <span class="capability-number">01</span>
-            <h3>Data Analysis</h3>
-            <p>
-              Clean, transform, explore, and analyze structured and
-              transactional datasets to identify patterns, trends,
-              anomalies, and business drivers.
-            </p>
-            <div class="tag-list">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>NumPy</span>
-              <span>EDA</span>
-            </div>
-          </article>
+          <h2>
+            Technical toolkit.
+          </h2>
 
-          <article class="capability-card">
-            <span class="capability-number">02</span>
-            <h3>SQL Analytics</h3>
-            <p>
-              Build analytical queries for customer behavior, retention,
-              segmentation, profitability, business performance,
-              and data-quality validation.
-            </p>
-            <div class="tag-list">
-              <span>SQL</span>
-              <span>CTEs</span>
-              <span>Window Functions</span>
-              <span>SQLite</span>
-            </div>
-          </article>
-
-          <article class="capability-card">
-            <span class="capability-number">03</span>
-            <h3>Business Intelligence</h3>
-            <p>
-              Translate analytical results into KPI-focused dashboards
-              and reports designed for business users and decision
-              makers.
-            </p>
-            <div class="tag-list">
-              <span>Power BI</span>
-              <span>DAX</span>
-              <span>Excel</span>
-              <span>Reporting</span>
-            </div>
-          </article>
-
-          <article class="capability-card">
-            <span class="capability-number">04</span>
-            <h3>Data Visualization</h3>
-            <p>
-              Communicate analytical findings through clear charts,
-              visual narratives, dashboards, and structured reporting.
-            </p>
-            <div class="tag-list">
-              <span>Matplotlib</span>
-              <span>Power BI</span>
-              <span>Tableau</span>
-              <span>Dashboards</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-    <section class="section projects-section" id="projects">
-
-      <div class="container">
-
-        <div class="section-heading projects-heading">
-
-          <div>
-            <p class="section-kicker">03 · Projects</p>
-            <h2>Selected analytics work.</h2>
-          </div>
-
-          <p>
-            End-to-end projects demonstrating practical data analysis,
-            SQL, Business Intelligence, forecasting, and reporting.
+          <p class="section-lead">
+            Tools and analytical capabilities used throughout my
+            portfolio projects.
           </p>
 
         </div>
 
 
-        <!-- Project filters -->
-        <div class="project-filters" role="group" aria-label="Project filters">
+        <div class="skills-grid">
 
-          <button class="filter-btn active" data-filter="all">
+
+          <article class="skill-group">
+
+            <h3 class="skill-group-title">
+              Data Analysis
+            </h3>
+
+            <div class="chip-list">
+
+              <span class="chip">Python</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Seaborn</span>
+              <span class="chip">EDA</span>
+              <span class="chip">Data Cleaning</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-group">
+
+            <h3 class="skill-group-title">
+              SQL & Databases
+            </h3>
+
+            <div class="chip-list">
+
+              <span class="chip">SQL</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">DuckDB</span>
+              <span class="chip">CTEs</span>
+              <span class="chip">Window Functions</span>
+              <span class="chip">Aggregations</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-group">
+
+            <h3 class="skill-group-title">
+              Business Intelligence
+            </h3>
+
+            <div class="chip-list">
+
+              <span class="chip">Power BI</span>
+              <span class="chip">DAX</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">KPI Design</span>
+              <span class="chip">Dashboards</span>
+              <span class="chip">Reporting</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-group">
+
+            <h3 class="skill-group-title">
+              Microsoft Excel
+            </h3>
+
+            <div class="chip-list">
+
+              <span class="chip">Excel</span>
+              <span class="chip">Pivot Tables</span>
+              <span class="chip">Charts</span>
+              <span class="chip">Data Validation</span>
+              <span class="chip">Reporting</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-group skill-group-wide">
+
+            <h3 class="skill-group-title">
+              Analytical Methods
+            </h3>
+
+            <div class="chip-list">
+
+              <span class="chip">Exploratory Data Analysis</span>
+              <span class="chip">Customer Segmentation</span>
+              <span class="chip">RFM Analysis</span>
+              <span class="chip">Time Series</span>
+              <span class="chip">Forecasting</span>
+              <span class="chip">Financial Analysis</span>
+              <span class="chip">Business Analysis</span>
+              <span class="chip">Supply Chain Analytics</span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="projects"
+    >
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            03 · Projects
+          </p>
+
+          <h2>
+            End-to-end analytics projects.
+          </h2>
+
+          <p class="section-lead">
+            Practical projects demonstrating data preparation,
+            analysis, SQL, visualization, forecasting, and
+            Business Intelligence.
+          </p>
+
+        </div>
+
+
+        <!-- Filters -->
+        <div
+          class="filters"
+          aria-label="Project filters"
+        >
+
+          <button
+            class="filter-btn is-active"
+            type="button"
+            data-filter="all"
+          >
             All
           </button>
 
-          <button class="filter-btn" data-filter="python">
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="python"
+          >
             Python
           </button>
 
-          <button class="filter-btn" data-filter="sql">
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="sql"
+          >
             SQL
           </button>
 
-          <button class="filter-btn" data-filter="power-bi">
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="power-bi"
+          >
             Power BI
           </button>
 
-          <button class="filter-btn" data-filter="excel">
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="excel"
+          >
             Excel
           </button>
 
-          <button class="filter-btn" data-filter="pandas">
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="pandas"
+          >
             Pandas
           </button>
 
-          <button class="filter-btn" data-filter="matplotlib">
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="matplotlib"
+          >
             Matplotlib
           </button>
 
         </div>
 
 
-        <!-- ================= FEATURED PROJECTS ================= -->
-        <div class="projects-group">
-
-          <div class="projects-group-heading">
-            <span>Featured Projects</span>
-            <small>01–03</small>
-          </div>
+        <div class="projects-list">
 
 
-          <!-- PROJECT 01 -->
+          <!-- ======================================================
+               PROJECT 01 — HR ANALYTICS
+               ====================================================== -->
+
           <article
-            class="project-card featured"
-            data-project
-            data-tags="python sql power-bi excel pandas"
+            class="project-card reveal"
+            data-project-tags="python sql power-bi excel pandas"
           >
 
-            <div class="project-media">
+            <details class="project-details">
 
-              <img
-                src="assets/images/project-01.png"
-                alt="HR Analytics project dashboard"
-                loading="lazy"
-              >
+              <summary class="project-summary">
 
-              <span class="project-number">01</span>
+                <span class="project-index">
+                  01
+                </span>
 
-            </div>
 
-            <div class="project-body">
-
-              <div class="project-header">
-
-                <div>
-                  <p class="project-type">
-                    HR Analytics
-                  </p>
-
-                  <h3>
-                    Employee Attrition Analysis
-                  </h3>
-                </div>
-
-                <a
-                  class="project-github"
-                  href="https://github.com/kamelaggoun/hr-analytics"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View HR Analytics project on GitHub"
+                <img
+                  class="project-thumb"
+                  src="assets/images/project-01.png"
+                  alt="HR Analytics project"
+                  loading="lazy"
                 >
-                  GitHub ↗
-                </a>
+
+
+                <h3 class="project-title">
+                  HR Analytics
+                </h3>
+
+
+                <p class="project-tagline">
+                  Employee attrition and workforce analysis using
+                  Python, SQL, Power BI, and Excel.
+                </p>
+
+
+                <div class="project-tags">
+
+                  <span class="tag">Python</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Power BI</span>
+                  <span class="tag">Excel</span>
+                  <span class="tag">Pandas</span>
+
+                </div>
+
+
+                <span
+                  class="project-chevron"
+                  aria-hidden="true"
+                ></span>
+
+              </summary>
+
+
+              <div class="project-body">
+
+                <div class="project-grid">
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Business Problem
+                    </h4>
+
+                    <p>
+                      Analyze employee attrition and identify workforce
+                      patterns associated with employees leaving the
+                      organization.
+                    </p>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Approach
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Data cleaning and exploratory analysis using
+                        Python and Pandas.
+                      </li>
+
+                      <li>
+                        SQL analysis and validation.
+                      </li>
+
+                      <li>
+                        Attrition analysis across employee factors.
+                      </li>
+
+                      <li>
+                        Power BI dashboard development.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Key Findings
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        16.12% overall attrition.
+                      </li>
+
+                      <li>
+                        237 of 1,470 employees recorded as having
+                        left the organization.
+                      </li>
+
+                      <li>
+                        Attrition differed substantially across
+                        satisfaction and training levels.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+
+
+                <div class="project-links">
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kamelaggoun/hr-analytics"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub ↗
+                  </a>
+
+                </div>
 
               </div>
 
-              <p class="project-summary">
-                An end-to-end HR analytics case study investigating
-                employee attrition, satisfaction, training, and
-                workforce patterns using a public IBM HR dataset.
-              </p>
-
-              <div class="project-insights">
-
-                <div>
-                  <strong>16.12%</strong>
-                  <span>Overall attrition</span>
-                </div>
-
-                <div>
-                  <strong>65</strong>
-                  <span>SQL queries validated</span>
-                </div>
-
-                <div>
-                  <strong>3-page</strong>
-                  <span>Power BI dashboard</span>
-                </div>
-
-              </div>
-
-              <div class="project-method">
-
-                <span>Python</span>
-                <span>SQL</span>
-                <span>Power BI</span>
-                <span>Excel</span>
-                <span>Pandas</span>
-
-              </div>
-
-              <details class="project-details">
-
-                <summary>
-                  View analysis
-                  <span>+</span>
-                </summary>
-
-                <div class="details-content">
-
-                  <h4>Business problem</h4>
-
-                  <p>
-                    Identify the main workforce patterns associated
-                    with employee attrition and provide management
-                    with actionable analytical insights.
-                  </p>
-
-                  <h4>Analysis</h4>
-
-                  <ul>
-                    <li>Data cleaning and exploratory analysis in Python.</li>
-                    <li>SQL-based analytical validation.</li>
-                    <li>Attrition analysis across demographic and job factors.</li>
-                    <li>Power BI dashboard development.</li>
-                    <li>Visual analysis of satisfaction and training patterns.</li>
-                  </ul>
-
-                  <h4>Key findings</h4>
-
-                  <ul>
-                    <li>
-                      237 of 1,470 employees were recorded as having
-                      left the organization.
-                    </li>
-                    <li>
-                      Attrition varied substantially across satisfaction
-                      levels and training participation.
-                    </li>
-                    <li>
-                      Analytical SQL outputs were cross-checked against
-                      Python/Pandas results.
-                    </li>
-                  </ul>
-
-                </div>
-
-              </details>
-
-            </div>
+            </details>
 
           </article>
 
 
-          <!-- PROJECT 02 -->
+          <!-- ======================================================
+               PROJECT 02 — CUSTOMER SEGMENTATION
+               ====================================================== -->
+
           <article
-            class="project-card featured"
-            data-project
-            data-tags="python sql power-bi pandas"
+            class="project-card reveal"
+            data-project-tags="python sql power-bi pandas"
           >
 
-            <div class="project-media">
+            <details class="project-details">
 
-              <img
-                src="assets/images/project-02.png"
-                alt="Customer Segmentation project dashboard"
-                loading="lazy"
-              >
+              <summary class="project-summary">
 
-              <span class="project-number">02</span>
+                <span class="project-index">
+                  02
+                </span>
 
-            </div>
 
-            <div class="project-body">
-
-              <div class="project-header">
-
-                <div>
-                  <p class="project-type">
-                    Customer Analytics
-                  </p>
-
-                  <h3>
-                    Customer Segmentation
-                  </h3>
-                </div>
-
-                <a
-                  class="project-github"
-                  href="https://github.com/kamelaggoun/customer-segmentation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Customer Segmentation project on GitHub"
+                <img
+                  class="project-thumb"
+                  src="assets/images/project-02.png"
+                  alt="Customer Segmentation project"
+                  loading="lazy"
                 >
-                  GitHub ↗
-                </a>
+
+
+                <h3 class="project-title">
+                  Customer Segmentation
+                </h3>
+
+
+                <p class="project-tagline">
+                  RFM-based customer behavior and revenue
+                  concentration analysis.
+                </p>
+
+
+                <div class="project-tags">
+
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Power BI</span>
+
+                </div>
+
+
+                <span
+                  class="project-chevron"
+                  aria-hidden="true"
+                ></span>
+
+              </summary>
+
+
+              <div class="project-body">
+
+                <div class="project-grid">
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Business Problem
+                    </h4>
+
+                    <p>
+                      Understand customer value and purchasing behavior
+                      and identify segments with different commercial
+                      characteristics.
+                    </p>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Approach
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Cleaned more than one million transaction lines.
+                      </li>
+
+                      <li>
+                        Performed customer-level exploratory analysis.
+                      </li>
+
+                      <li>
+                        Built RFM scores and customer segments.
+                      </li>
+
+                      <li>
+                        Validated analytical results using SQL.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Key Findings
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Top 10% of customers generated 63.2% of
+                        net revenue.
+                      </li>
+
+                      <li>
+                        Top 1% generated 31.1% of net revenue.
+                      </li>
+
+                      <li>
+                        Champions represented 21.9% of customers
+                        and 69.3% of revenue.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+
+
+                <div class="project-links">
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kamelaggoun/customer-segmentation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub ↗
+                  </a>
+
+                </div>
 
               </div>
 
-              <p class="project-summary">
-                Customer behavior and RFM segmentation analysis using
-                more than one million UK e-commerce transaction lines
-                to identify high-value customer groups.
-              </p>
-
-              <div class="project-insights">
-
-                <div>
-                  <strong>1.07M+</strong>
-                  <span>Transaction lines</span>
-                </div>
-
-                <div>
-                  <strong>63.2%</strong>
-                  <span>Revenue from top 10%</span>
-                </div>
-
-                <div>
-                  <strong>21.9%</strong>
-                  <span>Champions customers</span>
-                </div>
-
-              </div>
-
-              <div class="project-method">
-
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>SQL</span>
-                <span>Power BI</span>
-
-              </div>
-
-              <details class="project-details">
-
-                <summary>
-                  View analysis
-                  <span>+</span>
-                </summary>
-
-                <div class="details-content">
-
-                  <h4>Business problem</h4>
-
-                  <p>
-                    Understand customer value and purchasing behavior
-                    and identify segments that can support more targeted
-                    commercial decisions.
-                  </p>
-
-                  <h4>Analysis</h4>
-
-                  <ul>
-                    <li>Transaction data cleaning and preparation.</li>
-                    <li>Exploratory customer behavior analysis.</li>
-                    <li>RFM scoring and customer segmentation.</li>
-                    <li>SQL validation using DuckDB.</li>
-                    <li>Power BI reporting structure.</li>
-                  </ul>
-
-                  <h4>Key findings</h4>
-
-                  <ul>
-                    <li>
-                      The top 10% of customers generated 63.2% of
-                      net revenue.
-                    </li>
-                    <li>
-                      The top 1% generated 31.1% of net revenue.
-                    </li>
-                    <li>
-                      Champions represented 21.9% of customers while
-                      contributing 69.3% of revenue.
-                    </li>
-                  </ul>
-
-                </div>
-
-              </details>
-
-            </div>
+            </details>
 
           </article>
 
 
-          <!-- PROJECT 03 -->
+          <!-- ======================================================
+               PROJECT 03 — SALES FORECASTING
+               ====================================================== -->
+
           <article
-            class="project-card featured"
-            data-project
-            data-tags="python sql power-bi excel pandas matplotlib"
+            class="project-card reveal"
+            data-project-tags="python sql power-bi excel pandas matplotlib"
           >
 
-            <div class="project-media">
+            <details class="project-details">
 
-              <img
-                src="assets/images/project-03.png"
-                alt="Sales Forecasting project"
-                loading="lazy"
-              >
+              <summary class="project-summary">
 
-              <span class="project-number">03</span>
+                <span class="project-index">
+                  03
+                </span>
 
-            </div>
 
-            <div class="project-body">
-
-              <div class="project-header">
-
-                <div>
-                  <p class="project-type">
-                    Forecasting & Time Series
-                  </p>
-
-                  <h3>
-                    Sales Forecasting & Time Series Analysis
-                  </h3>
-                </div>
-
-                <a
-                  class="project-github"
-                  href="https://github.com/kamelaggoun/sales-forecasting"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Sales Forecasting project on GitHub"
+                <img
+                  class="project-thumb"
+                  src="assets/images/project-03.png"
+                  alt="Sales Forecasting project"
+                  loading="lazy"
                 >
-                  GitHub ↗
-                </a>
+
+
+                <h3 class="project-title">
+                  Sales Forecasting & Time Series Analysis
+                </h3>
+
+
+                <p class="project-tagline">
+                  Historical sales analysis and forecasting using
+                  more than one million transaction records.
+                </p>
+
+
+                <div class="project-tags">
+
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">statsmodels</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Power BI</span>
+                  <span class="tag">Excel</span>
+
+                </div>
+
+
+                <span
+                  class="project-chevron"
+                  aria-hidden="true"
+                ></span>
+
+              </summary>
+
+
+              <div class="project-body">
+
+                <div class="project-grid">
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Business Problem
+                    </h4>
+
+                    <p>
+                      Analyze historical sales behavior and establish
+                      a transparent forecasting baseline for planning
+                      and future modeling.
+                    </p>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Approach
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Cleaned 1,033,036 transaction lines.
+                      </li>
+
+                      <li>
+                        Built chronological time-series datasets.
+                      </li>
+
+                      <li>
+                        Investigated trends and seasonality.
+                      </li>
+
+                      <li>
+                        Used chronological validation.
+                      </li>
+
+                      <li>
+                        Evaluated a seasonal-naive baseline.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Result
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Approximately 12% monthly MAPE in the
+                        analyzed validation setup.
+                      </li>
+
+                      <li>
+                        SQL analysis and Power BI reporting
+                        specifications included.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+
+
+                <div class="project-links">
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kamelaggoun/sales-forecasting"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub ↗
+                  </a>
+
+                </div>
 
               </div>
 
-              <p class="project-summary">
-                Time-series analysis and sales forecasting using more
-                than one million cleaned transaction lines from the
-                UCI Online Retail II dataset.
-              </p>
-
-              <div class="project-insights">
-
-                <div>
-                  <strong>1.03M+</strong>
-                  <span>Cleaned transactions</span>
-                </div>
-
-                <div>
-                  <strong>12%</strong>
-                  <span>Approx. monthly MAPE</span>
-                </div>
-
-                <div>
-                  <strong>24 mo.</strong>
-                  <span>Historical period</span>
-                </div>
-
-              </div>
-
-              <div class="project-method">
-
-                <span>Python</span>
-                <span>statsmodels</span>
-                <span>SQL</span>
-                <span>Excel</span>
-                <span>Power BI</span>
-
-              </div>
-
-              <details class="project-details">
-
-                <summary>
-                  View analysis
-                  <span>+</span>
-                </summary>
-
-                <div class="details-content">
-
-                  <h4>Business problem</h4>
-
-                  <p>
-                    Analyze historical sales behavior and build a
-                    transparent forecasting baseline that can support
-                    planning and future modeling.
-                  </p>
-
-                  <h4>Analysis</h4>
-
-                  <ul>
-                    <li>Transaction cleaning and chronological preparation.</li>
-                    <li>Time-series aggregation and trend analysis.</li>
-                    <li>Seasonality investigation.</li>
-                    <li>Chronological validation.</li>
-                    <li>Seasonal-naive forecasting baseline.</li>
-                    <li>SQL and Power BI reporting specifications.</li>
-                  </ul>
-
-                  <h4>Result</h4>
-
-                  <p>
-                    The selected seasonal-naive baseline achieved
-                    approximately 12% monthly MAPE in the analyzed
-                    validation setup.
-                  </p>
-
-                </div>
-
-              </details>
-
-            </div>
+            </details>
 
           </article>
 
-        </div>
 
+          <!-- ======================================================
+               PROJECT 04 — SQL BUSINESS ANALYSIS
+               ====================================================== -->
 
-        <!-- ================= MORE PROJECTS ================= -->
-        <div class="projects-group more-projects">
-
-          <div class="projects-group-heading">
-            <span>More Projects</span>
-            <small>04–06</small>
-          </div>
-
-
-          <!-- PROJECT 04 -->
           <article
-            class="project-card compact"
-            data-project
-            data-tags="sql python power-bi pandas"
+            class="project-card reveal"
+            data-project-tags="sql python power-bi pandas"
           >
 
-            <div class="project-media">
+            <details class="project-details">
 
-              <img
-                src="assets/images/project-04.png"
-                alt="SQL Business Analysis project"
-                loading="lazy"
-              >
+              <summary class="project-summary">
 
-              <span class="project-number">04</span>
+                <span class="project-index">
+                  04
+                </span>
 
-            </div>
 
-            <div class="project-body">
+                <img
+                  class="project-thumb"
+                  src="assets/images/project-04.png"
+                  alt="SQL Business Analysis project"
+                  loading="lazy"
+                >
 
-              <p class="project-type">
-                SQL Analytics
-              </p>
 
-              <h3>
-                SQL Business Analysis
-              </h3>
+                <h3 class="project-title">
+                  SQL Business Analysis
+                </h3>
 
-              <p class="project-summary">
-                Advanced SQL analysis covering customer behavior,
-                retention, lifetime value, Pareto analysis, and
-                business performance.
-              </p>
 
-              <div class="project-method">
-                <span>SQL</span>
-                <span>CTEs</span>
-                <span>Window Functions</span>
-                <span>Python</span>
-                <span>Power BI</span>
+                <p class="project-tagline">
+                  Advanced SQL analysis covering customer behavior,
+                  retention, LTV, and Pareto analysis.
+                </p>
+
+
+                <div class="project-tags">
+
+                  <span class="tag">SQL</span>
+                  <span class="tag">CTEs</span>
+                  <span class="tag">Window Functions</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Power BI</span>
+
+                </div>
+
+
+                <span
+                  class="project-chevron"
+                  aria-hidden="true"
+                ></span>
+
+              </summary>
+
+
+              <div class="project-body">
+
+                <div class="project-grid">
+
+                  <div class="project-field">
+
+                    <h4>
+                      Business Problem
+                    </h4>
+
+                    <p>
+                      Use SQL to answer practical business questions
+                      around customers, revenue, retention, and
+                      long-term value.
+                    </p>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Approach
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Data quality analysis.
+                      </li>
+
+                      <li>
+                        Cohort and retention analysis.
+                      </li>
+
+                      <li>
+                        Customer lifetime value analysis.
+                      </li>
+
+                      <li>
+                        Pareto analysis.
+                      </li>
+
+                      <li>
+                        CTEs and window functions.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Validation
+                    </h4>
+
+                    <p>
+                      Analytical results were cross-checked using
+                      Python and Pandas before being structured for
+                      Business Intelligence reporting.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="project-links">
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kamelaggoun/sql-business-analysis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub ↗
+                  </a>
+
+                </div>
+
               </div>
 
-              <a
-                class="text-link"
-                href="https://github.com/kamelaggoun/sql-business-analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View repository ↗
-              </a>
-
-            </div>
+            </details>
 
           </article>
 
 
-          <!-- PROJECT 05 -->
+          <!-- ======================================================
+               PROJECT 05 — FINANCIAL PERFORMANCE
+               ====================================================== -->
+
           <article
-            class="project-card compact"
-            data-project
-            data-tags="python sql power-bi excel pandas"
+            class="project-card reveal"
+            data-project-tags="python sql power-bi excel pandas"
           >
 
-            <div class="project-media">
+            <details class="project-details">
 
-              <img
-                src="assets/images/project-05.png"
-                alt="Financial Performance Analysis project"
-                loading="lazy"
-              >
+              <summary class="project-summary">
 
-              <span class="project-number">05</span>
+                <span class="project-index">
+                  05
+                </span>
 
-            </div>
 
-            <div class="project-body">
+                <img
+                  class="project-thumb"
+                  src="assets/images/project-05.png"
+                  alt="Financial Performance Analysis project"
+                  loading="lazy"
+                >
 
-              <p class="project-type">
-                Financial Analytics
-              </p>
 
-              <h3>
-                Financial Performance Analysis
-              </h3>
+                <h3 class="project-title">
+                  Financial Performance Analysis
+                </h3>
 
-              <p class="project-summary">
-                Financial analysis focused on revenue, expenses,
-                profitability, margins, and business performance
-                using Python, SQL, Excel, and Power BI.
-              </p>
 
-              <div class="project-method">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>SQL</span>
-                <span>Excel</span>
-                <span>Power BI</span>
+                <p class="project-tagline">
+                  Revenue, cost, profitability, and margin analysis
+                  using Python, SQL, Excel, and Power BI.
+                </p>
+
+
+                <div class="project-tags">
+
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Excel</span>
+                  <span class="tag">Power BI</span>
+
+                </div>
+
+
+                <span
+                  class="project-chevron"
+                  aria-hidden="true"
+                ></span>
+
+              </summary>
+
+
+              <div class="project-body">
+
+                <div class="project-grid">
+
+                  <div class="project-field">
+
+                    <h4>
+                      Business Problem
+                    </h4>
+
+                    <p>
+                      Analyze financial performance and understand
+                      the relationships between revenue, costs,
+                      expenses, and profitability.
+                    </p>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Approach
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Data preparation using Python and Pandas.
+                      </li>
+
+                      <li>
+                        SQL-based financial analysis.
+                      </li>
+
+                      <li>
+                        Revenue and expense analysis.
+                      </li>
+
+                      <li>
+                        Margin and profitability analysis.
+                      </li>
+
+                      <li>
+                        Power BI and Excel reporting.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Focus
+                    </h4>
+
+                    <p>
+                      Financial KPIs, profitability, expense patterns,
+                      revenue performance, and business reporting.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="project-links">
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kamelaggoun/financial-performance-analysis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub ↗
+                  </a>
+
+                </div>
+
               </div>
 
-              <a
-                class="text-link"
-                href="https://github.com/kamelaggoun/financial-performance-analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View repository ↗
-              </a>
-
-            </div>
+            </details>
 
           </article>
 
 
-          <!-- PROJECT 06 -->
+          <!-- ======================================================
+               PROJECT 06 — SUPPLY CHAIN
+               ====================================================== -->
+
           <article
-            class="project-card compact"
-            data-project
-            data-tags="python sql power-bi pandas"
+            class="project-card reveal"
+            data-project-tags="python sql power-bi pandas"
           >
 
-            <div class="project-media">
+            <details class="project-details">
 
-              <img
-                src="assets/images/project-06.png"
-                alt="Supply Chain and Inventory Analytics project"
-                loading="lazy"
-              >
+              <summary class="project-summary">
 
-              <span class="project-number">06</span>
+                <span class="project-index">
+                  06
+                </span>
 
-            </div>
 
-            <div class="project-body">
+                <img
+                  class="project-thumb"
+                  src="assets/images/project-06.png"
+                  alt="Supply Chain and Inventory Analytics project"
+                  loading="lazy"
+                >
 
-              <p class="project-type">
-                Operations Analytics
-              </p>
 
-              <h3>
-                Supply Chain & Inventory Analytics
-              </h3>
+                <h3 class="project-title">
+                  Supply Chain & Inventory Analytics
+                </h3>
 
-              <p class="project-summary">
-                Operational analysis covering inventory, demand,
-                logistics, and supply-chain performance through
-                analytical KPIs and dashboard design.
-              </p>
 
-              <div class="project-method">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>SQL</span>
-                <span>Power BI</span>
+                <p class="project-tagline">
+                  Inventory, demand, logistics, and operational
+                  performance analysis.
+                </p>
+
+
+                <div class="project-tags">
+
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Power BI</span>
+
+                </div>
+
+
+                <span
+                  class="project-chevron"
+                  aria-hidden="true"
+                ></span>
+
+              </summary>
+
+
+              <div class="project-body">
+
+                <div class="project-grid">
+
+                  <div class="project-field">
+
+                    <h4>
+                      Business Problem
+                    </h4>
+
+                    <p>
+                      Analyze operational performance across inventory,
+                      demand, logistics, and supply-chain activities.
+                    </p>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Approach
+                    </h4>
+
+                    <ul>
+
+                      <li>
+                        Data preparation and exploratory analysis.
+                      </li>
+
+                      <li>
+                        Operational KPI development.
+                      </li>
+
+                      <li>
+                        Inventory and demand analysis.
+                      </li>
+
+                      <li>
+                        SQL-based analytical queries.
+                      </li>
+
+                      <li>
+                        Power BI dashboard specification.
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div class="project-field">
+
+                    <h4>
+                      Focus
+                    </h4>
+
+                    <p>
+                      Inventory health, operational efficiency,
+                      demand patterns, logistics performance, and
+                      supply-chain decision support.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="project-links">
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/kamelaggoun/supply-chain-inventory-analytics"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub ↗
+                  </a>
+
+                </div>
+
               </div>
 
-              <a
-                class="text-link"
-                href="https://github.com/kamelaggoun/supply-chain-inventory-analytics"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View repository ↗
-              </a>
-
-            </div>
+            </details>
 
           </article>
+
 
         </div>
 
@@ -1125,190 +1817,126 @@
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
-    <section class="section skills-section" id="skills">
+    <!-- ============================================================
+         EXPERIENCE
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="experience"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
-          <p class="section-kicker">04 · Skills</p>
-          <h2>Technical toolkit.</h2>
-        </div>
+        <div class="section-head">
 
-        <div class="skills-grid">
+          <p class="eyebrow">
+            04 · Experience
+          </p>
 
-          <div class="skill-category">
-
-            <h3>Data Analysis</h3>
-
-            <div class="skill-list">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>NumPy</span>
-              <span>Matplotlib</span>
-              <span>Seaborn</span>
-              <span>EDA</span>
-              <span>Data Cleaning</span>
-            </div>
-
-          </div>
-
-
-          <div class="skill-category">
-
-            <h3>Databases & SQL</h3>
-
-            <div class="skill-list">
-              <span>SQL</span>
-              <span>SQLite</span>
-              <span>MySQL</span>
-              <span>DuckDB</span>
-              <span>CTEs</span>
-              <span>Window Functions</span>
-              <span>Aggregations</span>
-            </div>
-
-          </div>
-
-
-          <div class="skill-category">
-
-            <h3>Business Intelligence</h3>
-
-            <div class="skill-list">
-              <span>Power BI</span>
-              <span>DAX</span>
-              <span>Tableau</span>
-              <span>KPI Design</span>
-              <span>Dashboard Development</span>
-              <span>Reporting</span>
-            </div>
-
-          </div>
-
-
-          <div class="skill-category">
-
-            <h3>Productivity</h3>
-
-            <div class="skill-list">
-              <span>Microsoft Excel</span>
-              <span>Pivot Tables</span>
-              <span>Data Validation</span>
-              <span>Charts</span>
-              <span>Reporting</span>
-            </div>
-
-          </div>
+          <h2>
+            Experience & practical work.
+          </h2>
 
         </div>
 
-      </div>
-
-    </section>
-
-
-    <!-- ================= EXPERIENCE ================= -->
-    <section class="section experience-section" id="experience">
-
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="section-kicker">05 · Experience</p>
-          <h2>Experience & practical work.</h2>
-        </div>
 
         <div class="timeline">
 
-          <article class="timeline-item">
 
-            <div class="timeline-marker"></div>
+          <article class="timeline-item reveal">
 
-            <div class="timeline-content">
+            <span class="timeline-marker"></span>
 
-              <div class="timeline-header">
-                <div>
-                  <h3>Independent Data Analysis</h3>
-                  <p>Independent · Self-directed</p>
-                </div>
+            <div class="timeline-head">
 
-                <time datetime="2021-10">
-                  Oct 2021 – Present
-                </time>
-              </div>
+              <h3 class="timeline-role">
+                Independent Data Analysis
+              </h3>
 
-              <p>
-                Develop end-to-end data analysis projects involving
-                Python, SQL, Power BI, Excel, customer analytics,
-                forecasting, financial analysis, and operational
-                analytics.
-              </p>
-
-              <ul>
-                <li>Build reproducible analytical workflows.</li>
-                <li>Validate analytical results across tools.</li>
-                <li>Develop portfolio-grade dashboards and reports.</li>
-                <li>Document analytical methodology and findings.</li>
-              </ul>
+              <span class="timeline-period">
+                Oct 2021 – Present
+              </span>
 
             </div>
+
+            <p class="timeline-desc">
+              Self-directed analytical work focused on developing
+              practical data analysis and Business Intelligence
+              projects.
+            </p>
+
+            <ul class="timeline-list">
+
+              <li>
+                Build end-to-end projects using Python, SQL,
+                Power BI, and Excel.
+              </li>
+
+              <li>
+                Develop reproducible data cleaning and analytical
+                workflows.
+              </li>
+
+              <li>
+                Create dashboards, reports, and business-oriented
+                analytical outputs.
+              </li>
+
+            </ul>
 
           </article>
 
 
-          <article class="timeline-item">
+          <article class="timeline-item reveal">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-marker"></span>
 
-            <div class="timeline-content">
+            <div class="timeline-head">
 
-              <div class="timeline-header">
-                <div>
-                  <h3>English Teacher</h3>
-                  <p>Independent</p>
-                </div>
+              <h3 class="timeline-role">
+                English Teacher
+              </h3>
 
-                <time datetime="2019-10">
-                  Oct 2019 – Feb 2021
-                </time>
-              </div>
-
-              <p>
-                Taught English and developed communication, explanation,
-                lesson-planning, and learner-support skills.
-              </p>
+              <span class="timeline-period">
+                Oct 2019 – Feb 2021
+              </span>
 
             </div>
+
+            <p class="timeline-desc">
+              Independent English teaching work focused on
+              communication, explanation, lesson planning, and
+              learner support.
+            </p>
 
           </article>
 
 
-          <article class="timeline-item">
+          <article class="timeline-item reveal">
 
-            <div class="timeline-marker"></div>
+            <span class="timeline-marker"></span>
 
-            <div class="timeline-content">
+            <div class="timeline-head">
 
-              <div class="timeline-header">
-                <div>
-                  <h3>Freelance Writing & Translation</h3>
-                  <p>Freelance</p>
-                </div>
+              <h3 class="timeline-role">
+                Freelance Writing & Translation
+              </h3>
 
-                <time datetime="2019-07">
-                  Jul 2019 – Present
-                </time>
-              </div>
-
-              <p>
-                Writing and translation work across English and Arabic,
-                with a focus on clear communication, research,
-                documentation, and content development.
-              </p>
+              <span class="timeline-period">
+                Jul 2019 – Present
+              </span>
 
             </div>
 
+            <p class="timeline-desc">
+              Freelance writing and translation work involving
+              research, documentation, English-Arabic communication,
+              and content development.
+            </p>
+
           </article>
+
 
         </div>
 
@@ -1317,58 +1945,74 @@
     </section>
 
 
-    <!-- ================= EDUCATION ================= -->
-    <section class="section education-section" id="education">
+    <!-- ============================================================
+         EDUCATION
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="education"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
-          <p class="section-kicker">06 · Education</p>
-          <h2>Academic background.</h2>
+        <div class="section-head">
+
+          <p class="eyebrow">
+            05 · Education
+          </p>
+
+          <h2>
+            Academic background.
+          </h2>
+
         </div>
 
-        <div class="education-grid">
 
-          <article class="education-card">
+        <div class="education-list">
 
-            <span class="education-year">
-              2019 – 2021
+
+          <article class="edu-item reveal">
+
+            <span class="edu-period">
+              Sep 2019 – Jul 2021
             </span>
 
-            <h3>
+            <h3 class="edu-degree">
               Master's Degree
             </h3>
 
-            <p>
+            <p class="edu-field">
               English Language and Culture
             </p>
 
-            <span>
+            <span class="edu-school">
               Abbas Laghrour University · Khenchela
             </span>
 
           </article>
 
 
-          <article class="education-card">
+          <article class="edu-item reveal">
 
-            <span class="education-year">
-              2016 – 2019
+            <span class="edu-period">
+              Sep 2016 – Jul 2019
             </span>
 
-            <h3>
+            <h3 class="edu-degree">
               Bachelor's Degree
             </h3>
 
-            <p>
+            <p class="edu-field">
               English Language and Literature
             </p>
 
-            <span>
+            <span class="edu-school">
               Abbas Laghrour University
             </span>
 
           </article>
+
 
         </div>
 
@@ -1377,66 +2021,226 @@
     </section>
 
 
-    <!-- ================= CERTIFICATIONS ================= -->
-    <section class="section certifications-section" id="certifications">
+    <!-- ============================================================
+         CERTIFICATIONS
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="certifications"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-head">
 
-          <div>
-            <p class="section-kicker">07 · Certifications</p>
-            <h2>Continuous technical development.</h2>
-          </div>
+          <p class="eyebrow">
+            06 · Certifications
+          </p>
 
-          <p>
-            Selected credentials relevant to data analysis, SQL,
-            programming, Excel, Business Intelligence, and analytics.
+          <h2>
+            Technical learning and credentials.
+          </h2>
+
+          <p class="section-lead">
+            Selected credentials relevant to data analysis,
+            programming, SQL, Excel, visualization, and
+            Business Intelligence.
           </p>
 
         </div>
 
 
-        <div class="certification-grid">
+        <div class="certs-grid">
 
-          <article class="certification-card">
-            <span>Data Analysis</span>
-            <h3>Data Analysis & Visualization</h3>
-            <p>Python · Pandas · Visualization</p>
+
+          <article class="cert-card reveal">
+
+            <span class="cert-cat">
+              Data Analysis
+            </span>
+
+            <h3 class="cert-name">
+              Data Analysis & Visualization
+            </h3>
+
+            <span class="cert-issuer">
+              Python · Data Visualization
+            </span>
+
           </article>
 
-          <article class="certification-card">
-            <span>SQL</span>
-            <h3>SQL & Databases</h3>
-            <p>SQL · Relational Databases · Analytics</p>
+
+          <article class="cert-card reveal">
+
+            <span class="cert-cat">
+              SQL
+            </span>
+
+            <h3 class="cert-name">
+              SQL & Database Analytics
+            </h3>
+
+            <span class="cert-issuer">
+              SQL · Relational Databases
+            </span>
+
           </article>
 
-          <article class="certification-card">
-            <span>Business Intelligence</span>
-            <h3>Power BI & Tableau</h3>
-            <p>Dashboards · Visualization · Reporting</p>
+
+          <article class="cert-card reveal">
+
+            <span class="cert-cat">
+              Business Intelligence
+            </span>
+
+            <h3 class="cert-name">
+              Power BI & Tableau
+            </h3>
+
+            <span class="cert-issuer">
+              Dashboards · Visualization
+            </span>
+
           </article>
 
-          <article class="certification-card">
-            <span>Excel</span>
-            <h3>Excel & Spreadsheets</h3>
-            <p>Analysis · Reporting · Data Management</p>
+
+          <article class="cert-card reveal">
+
+            <span class="cert-cat">
+              Excel
+            </span>
+
+            <h3 class="cert-name">
+              Excel & Spreadsheets
+            </h3>
+
+            <span class="cert-issuer">
+              Analysis · Reporting
+            </span>
+
           </article>
+
 
         </div>
 
-        <details class="certifications-more">
 
-          <summary>
-            View additional credentials
-            <span>+</span>
+        <!-- Additional credentials -->
+        <details class="certs-more">
+
+          <summary class="certs-more-summary">
+
+            <span>
+              Additional credentials
+            </span>
+
+            <span class="certs-count">
+              View all
+            </span>
+
+            <span
+              class="certs-chevron"
+              aria-hidden="true"
+            ></span>
+
           </summary>
 
-          <div class="certifications-note">
-            Additional certificates and learning credentials can be
-            listed here. Prioritize credentials directly relevant to
-            Data Analysis, SQL, Python, Excel, Power BI, and Business
-            Intelligence.
+
+          <div class="certs-cats">
+
+
+            <div>
+
+              <h3 class="certs-cat-title">
+                Data Analysis & Visualization
+              </h3>
+
+              <div class="certs-cat-list">
+
+                <div class="cert-entry">
+                  <span class="cert-entry-link">
+                    Data Visualization in Tableau & Python
+                  </span>
+
+                  <span class="cert-meta">
+                    Udemy · 2025
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="certs-cat-title">
+                SQL & Databases
+              </h3>
+
+              <div class="certs-cat-list">
+
+                <div class="cert-entry">
+                  <span class="cert-entry-link">
+                    SQL & Database Learning Credentials
+                  </span>
+
+                  <span class="cert-meta">
+                    Various
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="certs-cat-title">
+                Python & Programming
+              </h3>
+
+              <div class="certs-cat-list">
+
+                <div class="cert-entry">
+                  <span class="cert-entry-link">
+                    Python Programming Credentials
+                  </span>
+
+                  <span class="cert-meta">
+                    Various
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="certs-cat-title">
+                Excel & Spreadsheets
+              </h3>
+
+              <div class="certs-cat-list">
+
+                <div class="cert-entry">
+                  <span class="cert-entry-link">
+                    Excel & Spreadsheet Credentials
+                  </span>
+
+                  <span class="cert-meta">
+                    Various
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+
           </div>
 
         </details>
@@ -1446,67 +2250,123 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
-    <section class="section contact-section" id="contact">
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+
+    <section
+      class="section"
+      id="contact"
+    >
 
       <div class="container">
 
-        <div class="contact-card">
+        <div class="section-head">
 
-          <div>
+          <p class="eyebrow">
+            07 · Contact
+          </p>
 
-            <p class="section-kicker">
-              08 · Contact
-            </p>
+          <h2>
+            Let's connect.
+          </h2>
 
-            <h2>
-              Let's connect.
-            </h2>
+          <p class="section-lead">
+            For data analysis opportunities, collaboration, or
+            professional inquiries.
+          </p>
 
-            <p>
-              For data analysis opportunities, collaboration, or
-              professional inquiries, you can reach me through the
-              following channels.
-            </p>
-
-          </div>
+        </div>
 
 
-          <div class="contact-links">
+        <div class="contact-grid">
 
-            <a href="mailto:kamel9aggoun@gmail.com">
-              <span>Email</span>
-              <strong>kamel9aggoun@gmail.com</strong>
-            </a>
+
+          <article class="contact-card reveal">
+
+            <span class="contact-icon">
+              @
+            </span>
+
+            <span class="contact-label">
+              Email
+            </span>
 
             <a
+              class="contact-value"
+              href="mailto:kamel9aggoun@gmail.com"
+            >
+              kamel9aggoun@gmail.com
+            </a>
+
+          </article>
+
+
+          <article class="contact-card reveal">
+
+            <span class="contact-icon">
+              in
+            </span>
+
+            <span class="contact-label">
+              LinkedIn
+            </span>
+
+            <a
+              class="contact-value"
               href="https://www.linkedin.com/in/kamelaggoun"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>LinkedIn</span>
-              <strong>linkedin.com/in/kamelaggoun</strong>
+              linkedin.com/in/kamelaggoun
             </a>
 
+          </article>
+
+
+          <article class="contact-card reveal">
+
+            <span class="contact-icon">
+              GH
+            </span>
+
+            <span class="contact-label">
+              GitHub
+            </span>
+
             <a
+              class="contact-value"
               href="https://github.com/kamelaggoun"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>GitHub</span>
-              <strong>github.com/kamelaggoun</strong>
+              github.com/kamelaggoun
             </a>
 
+          </article>
+
+
+          <article class="contact-card reveal">
+
+            <span class="contact-icon">
+              CV
+            </span>
+
+            <span class="contact-label">
+              Resume
+            </span>
+
             <a
+              class="contact-value"
               href="assets/cv/Kamel-Aggoun-CV.pdf"
               target="_blank"
               rel="noopener"
             >
-              <span>CV</span>
-              <strong>Download PDF</strong>
+              Download CV
             </a>
 
-          </div>
+          </article>
+
 
         </div>
 
@@ -1514,44 +2374,59 @@
 
     </section>
 
+
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+
   <footer class="site-footer">
 
     <div class="container footer-inner">
 
-      <div>
-        <strong>Kamel Aggoun</strong>
-        <span>Data Analyst · Business Intelligence</span>
-      </div>
+      <a
+        class="footer-brand"
+        href="#top"
+      >
 
-      <div class="footer-links">
+        <span class="logo-mark">
+          KA
+        </span>
 
-        <a
-          href="https://github.com/kamelaggoun"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
+        <span>
+          Kamel Aggoun
+        </span>
+
+      </a>
+
+
+      <nav
+        class="footer-nav"
+        aria-label="Footer navigation"
+      >
+
+        <a href="#about">
+          About
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/kamelaggoun"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
+        <a href="#projects">
+          Projects
         </a>
 
-        <a href="mailto:kamel9aggoun@gmail.com">
-          Email
+        <a href="#skills">
+          Skills
         </a>
 
-      </div>
+        <a href="#contact">
+          Contact
+        </a>
 
-      <p>
+      </nav>
+
+
+      <p class="footer-copy">
         © 2026 Kamel Aggoun. All rights reserved.
       </p>
 
@@ -1572,80 +2447,77 @@
   </button>
 
 
-  <!-- ================= JAVASCRIPT ================= -->
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+
   <script src="js/script.js"></script>
+
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
 
-      /* ---------------- Theme ---------------- */
+      /* ==========================================================
+         Theme toggle
+         ========================================================== */
 
-      const themeToggle = document.getElementById("theme-toggle");
+      const themeToggle =
+        document.getElementById("theme-toggle");
 
       if (themeToggle) {
+
         themeToggle.addEventListener("click", () => {
 
-          const currentTheme =
+          const current =
             document.documentElement.dataset.theme;
 
-          const nextTheme =
-            currentTheme === "dark" ? "light" : "dark";
+          const next =
+            current === "dark"
+              ? "light"
+              : "dark";
 
-          document.documentElement.dataset.theme = nextTheme;
+          document.documentElement.dataset.theme = next;
 
-          localStorage.setItem("theme", nextTheme);
-
-        });
-      }
-
-
-      /* ---------------- Mobile navigation ---------------- */
-
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileNav = document.getElementById("mobile-nav");
-
-      if (menuToggle && mobileNav) {
-
-        menuToggle.addEventListener("click", () => {
-
-          const isOpen =
-            menuToggle.getAttribute("aria-expanded") === "true";
-
-          menuToggle.setAttribute(
-            "aria-expanded",
-            String(!isOpen)
-          );
-
-          mobileNav.hidden = isOpen;
-
-        });
-
-
-        mobileNav.querySelectorAll("a").forEach(link => {
-
-          link.addEventListener("click", () => {
-
-            menuToggle.setAttribute(
-              "aria-expanded",
-              "false"
-            );
-
-            mobileNav.hidden = true;
-
-          });
+          localStorage.setItem("theme", next);
 
         });
 
       }
 
 
-      /* ---------------- Project filtering ---------------- */
+      /* ==========================================================
+         Mobile navigation
+         ========================================================== */
+
+      const navToggle =
+        document.getElementById("nav-toggle");
+
+      const navLinks =
+        document.querySelectorAll(".nav-link");
+
+      navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          if (navToggle) {
+            navToggle.checked = false;
+          }
+
+        });
+
+      });
+
+
+      /* ==========================================================
+         Project filtering
+         ========================================================== */
 
       const filterButtons =
         document.querySelectorAll(".filter-btn");
 
       const projectCards =
-        document.querySelectorAll("[data-project]");
+        document.querySelectorAll(".project-card");
+
 
       filterButtons.forEach(button => {
 
@@ -1655,25 +2527,31 @@
             button.dataset.filter;
 
           filterButtons.forEach(btn => {
-            btn.classList.remove("active");
+            btn.classList.remove("is-active");
           });
 
-          button.classList.add("active");
+          button.classList.add("is-active");
+
 
           projectCards.forEach(card => {
 
-            if (filter === "all") {
-              card.hidden = false;
-              return;
-            }
-
             const tags =
-              card.dataset.tags
-                ? card.dataset.tags.split(" ")
+              card.dataset.projectTags
+                ? card.dataset.projectTags.split(" ")
                 : [];
 
-            card.hidden =
-              !tags.includes(filter);
+            if (
+              filter === "all" ||
+              tags.includes(filter)
+            ) {
+
+              card.classList.remove("is-hidden");
+
+            } else {
+
+              card.classList.add("is-hidden");
+
+            }
 
           });
 
@@ -1682,66 +2560,154 @@
       });
 
 
-      /* ---------------- Back to top ---------------- */
+      /* ==========================================================
+         Back to top
+         ========================================================== */
 
       const backToTop =
         document.getElementById("back-to-top");
 
+
       if (backToTop) {
 
-        window.addEventListener("scroll", () => {
+        const updateBackToTop = () => {
 
-          backToTop.classList.toggle(
-            "visible",
-            window.scrollY > 600
+          if (window.scrollY > 500) {
+            backToTop.classList.add("show");
+          } else {
+            backToTop.classList.remove("show");
+          }
+
+        };
+
+
+        window.addEventListener(
+          "scroll",
+          updateBackToTop,
+          { passive: true }
+        );
+
+
+        backToTop.addEventListener(
+          "click",
+          () => {
+
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+
+          }
+        );
+
+      }
+
+
+      /* ==========================================================
+         Scroll reveal
+         ========================================================== */
+
+      const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+      if (
+        "IntersectionObserver" in window &&
+        revealElements.length
+      ) {
+
+        const observer =
+          new IntersectionObserver(
+            entries => {
+
+              entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                  entry.target.classList.add(
+                    "is-visible"
+                  );
+
+                  observer.unobserve(
+                    entry.target
+                  );
+
+                }
+
+              });
+
+            },
+            {
+              threshold: 0.12
+            }
           );
 
+
+        revealElements.forEach(element => {
+          observer.observe(element);
         });
 
-        backToTop.addEventListener("click", () => {
+      } else {
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-
+        revealElements.forEach(element => {
+          element.classList.add("is-visible");
         });
 
       }
 
 
-      /* ---------------- Smooth navigation ---------------- */
+      /* ==========================================================
+         Active navigation
+         ========================================================== */
 
-      document
-        .querySelectorAll('a[href^="#"]')
-        .forEach(anchor => {
+      const sections =
+        document.querySelectorAll(
+          "main section[id]"
+        );
 
-          anchor.addEventListener("click", event => {
 
-            const targetId =
-              anchor.getAttribute("href");
+      if (
+        "IntersectionObserver" in window &&
+        sections.length
+      ) {
 
-            if (!targetId || targetId === "#") {
-              return;
+        const navObserver =
+          new IntersectionObserver(
+            entries => {
+
+              entries.forEach(entry => {
+
+                if (!entry.isIntersecting) {
+                  return;
+                }
+
+                const id =
+                  entry.target.getAttribute("id");
+
+                navLinks.forEach(link => {
+
+                  link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === `#${id}`
+                  );
+
+                });
+
+              });
+
+            },
+            {
+              rootMargin:
+                "-25% 0px -65% 0px"
             }
+          );
 
-            const target =
-              document.querySelector(targetId);
 
-            if (!target) {
-              return;
-            }
-
-            event.preventDefault();
-
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start"
-            });
-
-          });
-
+        sections.forEach(section => {
+          navObserver.observe(section);
         });
+
+      }
 
     });
   </script>
