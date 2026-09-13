@@ -125,6 +125,12 @@
           var match = filter === "all" || tags.indexOf(filter) !== -1;
           card.classList.toggle("is-hidden", !match);
         });
+
+        // Hide a group (Featured / More) when none of its cards match.
+        doc.querySelectorAll(".projects-group").forEach(function (group) {
+          var visible = group.querySelectorAll(".project-card:not(.is-hidden)").length;
+          group.classList.toggle("is-hidden", visible === 0);
+        });
       });
     });
   }

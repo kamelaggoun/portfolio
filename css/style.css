@@ -407,6 +407,14 @@ html.js .theme-toggle { display: inline-flex; }
   font-family: var(--font-mono);
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.hero-tools {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
   margin-bottom: 1.25rem;
 }
 
@@ -536,9 +544,19 @@ html.js .theme-toggle { display: inline-flex; }
 /* ---------- 08. About ---------- */
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-columns: 220px minmax(0, 1.5fr) minmax(0, 1fr);
   gap: 2.5rem;
   align-items: start;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
 }
 
 .about-text p { color: var(--text-secondary); margin-bottom: 1rem; }
@@ -604,6 +622,49 @@ html.js .theme-toggle { display: inline-flex; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+/* ---------- 09b. What I Do (services) ---------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.service-card h3 { font-size: 1.05rem; }
+
+.service-card p {
+  color: var(--text-secondary);
+  font-size: 0.93rem;
+  flex: 1;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 /* ---------- 10. Projects ---------- */
@@ -731,9 +792,9 @@ html.js .filters { display: flex; }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .project-field h4 {
@@ -767,6 +828,53 @@ html.js .filters { display: flex; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+/* Project groups: Featured + More */
+.projects-group.is-hidden { display: none; }
+
+.projects-group + .projects-group { margin-top: 2.5rem; }
+
+.projects-subhead {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.projects-subnote {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Featured cards: slightly larger and visually prioritized */
+.project-card--featured {
+  border-left: 3px solid var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.project-card--featured .project-summary { padding: 1.5rem 1.25rem; }
+
+.project-card--featured .project-title { font-size: 1.25rem; }
+
+/* Deliverables strip inside the expanded case study */
+.project-foot {
+  border-top: 1px dashed var(--border);
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-deliverables {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.project-deliverables span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-right: 0.6rem;
 }
 
 /* ---------- 11. Experience (timeline) ---------- */
@@ -1194,6 +1302,7 @@ html.js .reveal.is-visible {
 
   /* About stacks */
   .about-grid { grid-template-columns: 1fr; }
+  .about-photo { max-width: 240px; }
 
   /* Project summary simplifies */
   .project-summary {

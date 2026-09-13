@@ -30,9 +30,9 @@ step, no backend. Deploys directly to **GitHub Pages**.
 ## 1. Overview
 
 This portfolio is designed to present a Data Analyst for job applications: a clear
-hero section, an honest "About" statement, categorized skills, an expandable
-projects section, an experience timeline, education, certifications, and contact
-details.
+hero section, an honest "About" statement, a "What I Do" summary, categorized
+skills, featured + more projects with expandable case-study cards, an experience
+timeline, education, certifications, and contact details.
 
 It intentionally **avoids invented content**: work experience, certificates, and
 statistics are left as clearly marked `[placeholders]` so you can fill them in with
@@ -143,9 +143,10 @@ Each project is a single `<article class="project-card">` block in the
    - `data-tags` — space-separated filter tags (`python`, `sql`, `power-bi`, `excel`, …)
    - `data-title` — the project name
    - the `<img src="…">` — point it at your screenshot in `assets/images/`
-   - the title, tagline, and `<span class="tag">…</span>` technologies
-   - the business problem, key insights, and results fields
-   - the GitHub repository and live-demo links
+   - the title, outcome-focused tagline, and `<span class="tag">…</span>` technologies
+   - the Business Problem, Dataset, Analysis, and Key Outcome fields, plus Deliverables
+   - the case-study link (new projects go under "More Analytics Projects" unless
+     they replace one of the three featured case studies)
 3. Create a matching folder under `projects/` (e.g. `projects/project-04/`) for the
    project's screenshots, docs, and data. Copy a `README.md` from an existing
    project folder as a template.
