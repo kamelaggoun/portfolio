@@ -361,241 +361,642 @@
       </div>
     </section>
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="section" id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">03 · Projects</p>
-          <h2 class="section-title" id="projects-heading">Selected projects</h2>
-          <p class="section-lead">Click a project to expand its details, including the problem, insights, and results.</p>
+<!-- ================= PROJECTS ================= -->
+
+<section class="section" id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">03 · Projects</p>
+      <h2 class="section-title" id="projects-heading">Selected projects</h2>
+      <p class="section-lead">
+        Six end-to-end analytics projects covering HR, customer behaviour, forecasting,
+        SQL business analysis, financial performance, and supply chain operations.
+      </p>
+    </div>
+
+```
+<div class="filters" role="group" aria-label="Filter projects by technology">
+  <button class="filter-btn is-active" type="button" data-filter="all">All</button>
+  <button class="filter-btn" type="button" data-filter="python">Python</button>
+  <button class="filter-btn" type="button" data-filter="sql">SQL</button>
+  <button class="filter-btn" type="button" data-filter="power-bi">Power BI</button>
+  <button class="filter-btn" type="button" data-filter="excel">Excel</button>
+  <button class="filter-btn" type="button" data-filter="pandas">Pandas</button>
+  <button class="filter-btn" type="button" data-filter="matplotlib">Matplotlib</button>
+</div>
+
+<div class="projects-list">
+
+  <!-- ============ PROJECT 01 · HR Analytics ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi excel"
+    data-title="HR Analytics">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">01</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-01.svg"
+          alt="HR Analytics dashboard showing employee attrition and workforce insights"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">HR Analytics</h3>
+
+        <span class="project-tagline">
+          End-to-end HR analytics case study using Python, SQL, Power BI, and Excel
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Acme Corporation is a fictional case-study company based on the public
+              IBM HR Analytics Employee Attrition &amp; Performance dataset. The analysis
+              investigates employee attrition, identifies workforce factors associated
+              with turnover, and translates the findings into actionable recommendations
+              for HR management.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Key insights</h4>
+            <ul>
+              <li>
+                Overall attrition is 16.12%, with 237 employees leaving out of
+                1,470 employees in the dataset.
+              </li>
+              <li>
+                Job satisfaction is strongly associated with attrition. Attrition
+                reaches 22.8% for employees with a satisfaction score of 1,
+                compared with 11.3% for employees with a score of 4.
+              </li>
+              <li>
+                Employees with fewer training opportunities show higher attrition.
+                Attrition is 27.8% among employees with no training courses,
+                compared with 9.2% among employees who completed 6 courses.
+              </li>
+              <li>
+                The analysis separates correlation from unsupported assumptions,
+                helping identify practical areas for HR intervention.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Built an end-to-end HR analytics workflow covering data cleaning,
+                exploratory analysis, SQL validation, KPI analysis, and Power BI reporting.
+              </li>
+              <li>
+                Validated 65 SQL queries against Python and Pandas calculations
+                to improve analytical consistency.
+              </li>
+              <li>
+                Produced 12 business-focused visualisations covering attrition,
+                satisfaction, training, performance, income, and workforce patterns.
+              </li>
+              <li>
+                Developed a 3-page Power BI dashboard with interactive filters
+                and synchronised slicers.
+              </li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="filters" role="group" aria-label="Filter projects by technology">
-          <button class="filter-btn is-active" type="button" data-filter="all">All</button>
-          <button class="filter-btn" type="button" data-filter="python">Python</button>
-          <button class="filter-btn" type="button" data-filter="sql">SQL</button>
-          <button class="filter-btn" type="button" data-filter="power-bi">Power BI</button>
-          <button class="filter-btn" type="button" data-filter="excel">Excel</button>
-          <button class="filter-btn" type="button" data-filter="pandas">Pandas</button>
-          <button class="filter-btn" type="button" data-filter="matplotlib">Matplotlib</button>
-        </div>
-
-        <div class="projects-list">
-
-          <!-- ============ PROJECT 01 · HR Analytics ============ -->
-          <article class="project-card reveal" data-tags="python pandas sql power-bi excel"
-            data-title="HR Analytics">
-            <details class="project-details">
-              <summary class="project-summary">
-                <span class="project-index" aria-hidden="true">01</span>
-
-                <img class="project-thumb"
-                  src="assets/images/project-01.svg"
-                  alt="HR Analytics dashboard showing employee attrition and workforce insights"
-                  width="480"
-                  height="300"
-                  loading="lazy">
-
-                <h3 class="project-title">HR Analytics</h3>
-
-                <span class="project-tagline">
-                  End-to-end HR analytics case study using Python, SQL, Power BI, and Excel
-                </span>
-
-                <span class="project-tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Pandas</span>
-                  <span class="tag">SQL</span>
-                  <span class="tag">Power BI</span>
-                  <span class="tag">Excel</span>
-                </span>
-
-                <span class="project-chevron" aria-hidden="true"></span>
-              </summary>
-
-              <div class="project-body">
-                <div class="project-grid">
-
-                  <div class="project-field">
-                    <h4>Business problem</h4>
-                    <p>
-                      Acme Corporation is a fictional case-study company based on the public
-                      IBM HR Analytics Employee Attrition &amp; Performance dataset. The analysis
-                      investigates employee attrition, identifies workforce factors associated
-                      with turnover, and translates the findings into actionable recommendations
-                      for HR management.
-                    </p>
-                  </div>
-
-                  <div class="project-field">
-                    <h4>Key insights</h4>
-                    <ul>
-                      <li>
-                        Overall attrition is 16.12%, with 237 employees leaving out of
-                        1,470 employees in the dataset.
-                      </li>
-                      <li>
-                        High performers do not show a disproportionate attrition pattern.
-                        Attrition is 16.4% among employees with a performance rating of 4,
-                        compared with 16.1% among employees with a rating of 3.
-                      </li>
-                      <li>
-                        Job satisfaction is strongly associated with attrition. Attrition
-                        reaches 22.8% for employees with a satisfaction score of 1, compared
-                        with 11.3% for employees with a score of 4.
-                      </li>
-                      <li>
-                        Employees with fewer training opportunities show higher attrition.
-                        Attrition is 27.8% among employees with no training courses, compared
-                        with 9.2% among employees who completed 6 courses.
-                      </li>
-                      <li>
-                        The monthly income associated with employees who left the company
-                        totals approximately $1.13M, equivalent to approximately $13.6M
-                        on an annualised basis.
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="project-field">
-                    <h4>Results</h4>
-                    <ul>
-                      <li>
-                        Built an end-to-end HR analytics workflow covering data cleaning,
-                        exploratory analysis, SQL validation, KPI analysis, and Power BI reporting.
-                      </li>
-                      <li>
-                        Validated 65 SQL queries against Python and Pandas calculations
-                        to improve analytical consistency and data reliability.
-                      </li>
-                      <li>
-                        Produced 12 business-focused visualisations covering attrition,
-                        job satisfaction, training, performance, income, and workforce patterns.
-                      </li>
-                      <li>
-                        Developed a 3-page Power BI dashboard with interactive filters
-                        and synchronised slicers for HR decision-making.
-                      </li>
-                      <li>
-                        Translated the analytical findings into concrete HR recommendations
-                        focused on employee retention, satisfaction, and training.
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-
-                <div class="project-links">
-                  <a class="btn btn-outline"
-                    href="https://github.com/kamelaggoun/hr-analytics"
-                    target="_blank"
-                    rel="noopener noreferrer">GitHub repository</a>
-                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <!-- ============ PROJECT 02 · Customer Segmentation ============ -->
-          <article class="project-card reveal"
-            data-tags="python pandas sql power-bi"
-            data-title="Customer Segmentation">
-            <details class="project-details">
-              <summary class="project-summary">
-                <span class="project-index" aria-hidden="true">02</span>
-
-                <img class="project-thumb"
-                  src="assets/images/project-02.svg"
-                  alt="Customer Segmentation dashboard showing customer revenue and RFM insights"
-                  width="480"
-                  height="300"
-                  loading="lazy">
-
-                <h3 class="project-title">Customer Segmentation</h3>
-
-                <span class="project-tagline">
-                  End-to-end customer analytics on 1.07 million UK e-commerce transaction lines,
-                  from data cleaning to RFM segmentation and Power BI reporting
-                </span>
-
-                <span class="project-tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Pandas</span>
-                  <span class="tag">SQL</span>
-                  <span class="tag">Power BI</span>
-                </span>
-
-                <span class="project-chevron" aria-hidden="true"></span>
-              </summary>
-
-              <div class="project-body">
-                <div class="project-grid">
-
-                  <div class="project-field">
-                    <h4>Business problem</h4>
-                    <p>
-                      A UK-based online giftware retailer serves a mix of consumers and
-                      wholesale buyers. Management can see total revenue, but lacks a clear
-                      view of which customers generate that revenue. The analysis segments
-                      customers by value and behaviour to support more targeted marketing
-                      and retention decisions.
-                    </p>
-                  </div>
-
-                  <div class="project-field">
-                    <h4>Objectives</h4>
-                    <ul>
-                      <li>
-                        Turn raw transaction lines into a trustworthy, documented analytical dataset.
-                      </li>
-                      <li>
-                        Establish the commercial baseline, including customers, orders,
-                        revenue, order value, and purchase frequency.
-                      </li>
-                      <li>
-                        Score every customer using Recency, Frequency, and Monetary value.
-                      </li>
-                      <li>
-                        Identify high-value customer segments and translate the findings
-                        into prioritised marketing actions.
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="project-field">
-                    <h4>Key insights</h4>
-                    <ul>
-                      <li>
-                        Revenue is highly concentrated. The top 10% of customers generate
-                        63.2% of net revenue, while the top 1% generate 31.1%. Just 272
-                        customers, representing 4.6% of the customer base, account for half
-                        of all revenue. The Gini coefficient is 0.737.
-                      </li>
-                      <li>
-                        Champions are the highest-value segment. 1,282 customers, representing
-                        21.9% of customers, generate 69.3% of revenue, averaging £8,839 each
-                        across 17.0 orders. Their revenue share is substantially higher than
-                        their share of customers, with an efficiency index of 3.16.
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-
-                <div class="project-links">
-                  <a class="btn btn-outline"
-                    href="https://github.com/kamelaggoun/customer-segmentation"
-                    target="_blank"
-                    rel="noopener noreferrer">GitHub repository</a>
-                  <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
-                </div>
-              </div>
-            </details>
-          </article>
-
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/hr-analytics"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
         </div>
       </div>
-    </section>
+    </details>
+  </article>
+
+
+  <!-- ============ PROJECT 02 · Customer Segmentation ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi"
+    data-title="Customer Segmentation">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">02</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-02.svg"
+          alt="Customer Segmentation dashboard showing customer revenue and RFM insights"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Customer Segmentation</h3>
+
+        <span class="project-tagline">
+          Customer behaviour analysis on 1.07 million UK e-commerce transaction lines
+          using RFM segmentation and Power BI
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              A UK-based online giftware retailer serves a mix of consumers and
+              wholesale buyers. Management can see total revenue, but lacks a clear
+              view of which customers generate that revenue. The analysis segments
+              customers by value and behaviour to support targeted marketing and
+              retention decisions.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Key insights</h4>
+            <ul>
+              <li>
+                The top 10% of customers generate 63.2% of net revenue, while
+                the top 1% generate 31.1%.
+              </li>
+              <li>
+                Just 272 customers, representing 4.6% of the customer base,
+                account for half of total revenue.
+              </li>
+              <li>
+                The customer revenue distribution has a Gini coefficient of 0.737,
+                demonstrating substantial revenue concentration.
+              </li>
+              <li>
+                Champions represent 21.9% of customers but generate 69.3% of revenue,
+                making them the highest-priority segment for retention.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Cleaned and prepared more than one million transaction lines
+                for analytical use.
+              </li>
+              <li>
+                Established commercial KPIs covering customers, orders, revenue,
+                order value, and purchase frequency.
+              </li>
+              <li>
+                Applied Recency, Frequency, and Monetary scoring to classify customers.
+              </li>
+              <li>
+                Used SQL to validate analytical calculations and Power BI to
+                communicate the resulting customer segments.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/customer-segmentation"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+
+  <!-- ============ PROJECT 03 · Sales Forecasting ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi excel matplotlib"
+    data-title="Sales Forecasting &amp; Time Series Analysis">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">03</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-03.svg"
+          alt="Sales forecasting and time series analysis dashboard"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Sales Forecasting &amp; Time Series Analysis</h3>
+
+        <span class="project-tagline">
+          End-to-end retail forecasting using Python, statistics, SQL, Excel, and Power BI
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Retail businesses need reliable sales forecasts for planning inventory,
+              staffing, purchasing, and revenue expectations. This project analyses
+              more than one million retail transaction records and develops a
+              time-series forecasting workflow based on historical sales patterns.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Objectives</h4>
+            <ul>
+              <li>
+                Clean and prepare large-scale retail transaction data.
+              </li>
+              <li>
+                Aggregate transactions into a chronological sales series.
+              </li>
+              <li>
+                Evaluate forecasting approaches using time-based validation.
+              </li>
+              <li>
+                Measure forecast performance with appropriate error metrics.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Processed 1,033,036 cleaned transaction lines from the
+                UCI Online Retail II dataset.
+              </li>
+              <li>
+                Built a reproducible workflow using Pandas, NumPy, Matplotlib,
+                statsmodels, and SQL.
+              </li>
+              <li>
+                Compared forecasting approaches using chronological validation
+                rather than random train-test splitting.
+              </li>
+              <li>
+                Selected a seasonal-naive forecasting approach with approximately
+                12% monthly MAPE for the analysed forecasting setup.
+              </li>
+              <li>
+                Documented the resulting KPIs and dashboard requirements for
+                Power BI and Excel reporting.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/sales-forecasting"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+
+  <!-- ============ PROJECT 04 · SQL Business Analysis ============ -->
+  <article class="project-card reveal"
+    data-tags="sql python pandas power-bi"
+    data-title="SQL Business Analysis">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">04</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-04.svg"
+          alt="SQL business analysis dashboard showing customer and business performance metrics"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">SQL Business Analysis</h3>
+
+        <span class="project-tagline">
+          Advanced SQL analysis covering data quality, customer behaviour, retention,
+          LTV, and business performance
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Business data often contains quality issues and requires more than
+              simple aggregation to answer commercial questions. This project uses
+              advanced SQL techniques to move from raw relational data to validated
+              business analysis.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Analysis</h4>
+            <ul>
+              <li>
+                Audited data quality and validated analytical assumptions.
+              </li>
+              <li>
+                Analysed customer cohorts and retention behaviour.
+              </li>
+              <li>
+                Evaluated customer lifetime value and purchasing behaviour.
+              </li>
+              <li>
+                Applied Pareto analysis to identify concentration within the business.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Built reusable SQL queries for business performance analysis.
+              </li>
+              <li>
+                Used advanced SQL techniques including aggregations,
+                subqueries, CTEs, and window functions.
+              </li>
+              <li>
+                Cross-checked SQL outputs with Python and Pandas.
+              </li>
+              <li>
+                Translated analytical results into a Power BI reporting structure
+                suitable for business stakeholders.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/sql-business-analysis"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+
+  <!-- ============ PROJECT 05 · Financial Performance Analysis ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi excel"
+    data-title="Financial Performance Analysis">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">05</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-05.svg"
+          alt="Financial performance analysis dashboard showing revenue, costs, margins, and profitability"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Financial Performance Analysis</h3>
+
+        <span class="project-tagline">
+          Business performance analysis covering revenue, costs, profitability,
+          margins, and expenses
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Financial performance requires a view of both revenue generation
+              and the costs required to generate it. This project examines
+              financial performance across revenue, expenses, profitability,
+              and margins to support management reporting and decision-making.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Analysis</h4>
+            <ul>
+              <li>
+                Analysed revenue and expense patterns across business dimensions.
+              </li>
+              <li>
+                Evaluated profitability and margin performance.
+              </li>
+              <li>
+                Used SQL to calculate financial KPIs and comparative metrics.
+              </li>
+              <li>
+                Applied window functions to support period and performance analysis.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Built a structured financial analysis workflow using Python,
+                Pandas, SQL, Excel, and Power BI.
+              </li>
+              <li>
+                Created reusable calculations for revenue, costs, profit,
+                and margin analysis.
+              </li>
+              <li>
+                Converted financial findings into dashboard-ready business KPIs.
+              </li>
+              <li>
+                Combined analytical calculations with clear visual reporting
+                for management-oriented interpretation.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/financial-performance-analysis"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+
+  <!-- ============ PROJECT 06 · Supply Chain & Inventory Analytics ============ -->
+  <article class="project-card reveal"
+    data-tags="python pandas sql power-bi"
+    data-title="Supply Chain &amp; Inventory Analytics">
+    <details class="project-details">
+      <summary class="project-summary">
+        <span class="project-index" aria-hidden="true">06</span>
+
+        <img class="project-thumb"
+          src="assets/images/project-06.svg"
+          alt="Supply chain and inventory analytics dashboard showing operational performance"
+          width="480"
+          height="300"
+          loading="lazy">
+
+        <h3 class="project-title">Supply Chain &amp; Inventory Analytics</h3>
+
+        <span class="project-tagline">
+          Operational analytics for inventory, demand, logistics, and supply-chain performance
+        </span>
+
+        <span class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+        </span>
+
+        <span class="project-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="project-body">
+        <div class="project-grid">
+
+          <div class="project-field">
+            <h4>Business problem</h4>
+            <p>
+              Supply-chain teams need visibility into inventory, demand, logistics,
+              and operational performance. This project applies business analytics
+              techniques to identify patterns that can support better inventory
+              planning and operational decisions.
+            </p>
+          </div>
+
+          <div class="project-field">
+            <h4>Analysis</h4>
+            <ul>
+              <li>
+                Examined inventory and demand patterns.
+              </li>
+              <li>
+                Analysed operational and logistics performance.
+              </li>
+              <li>
+                Used SQL to structure and validate supply-chain metrics.
+              </li>
+              <li>
+                Prepared analytical outputs for Power BI reporting.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-field">
+            <h4>Results</h4>
+            <ul>
+              <li>
+                Built an end-to-end workflow combining Python, Pandas, SQL,
+                and Power BI.
+              </li>
+              <li>
+                Structured operational KPIs for inventory and supply-chain analysis.
+              </li>
+              <li>
+                Identified analytical areas relevant to demand planning,
+                inventory control, and logistics performance.
+              </li>
+              <li>
+                Converted operational analysis into a business-focused
+                dashboard specification.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-outline"
+            href="https://github.com/kamelaggoun/supply-chain-inventory-analytics"
+            target="_blank"
+            rel="noopener noreferrer">GitHub repository</a>
+          <span class="btn btn-outline is-disabled" aria-disabled="true">Live demo, add link</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+</div>
+```
+
+  </div>
+</section>
+
 
     <!-- ================= EXPERIENCE ================= -->
     <section class="section" id="experience" aria-labelledby="experience-heading">
