@@ -11,7 +11,7 @@
    02. Theme toggle (dark / light)
    03. Mobile navigation helpers
    04. Active navigation state (scroll spy)
-   05. Project filtering
+   05. Project filtering (incl. featured / more groups)
    06. Scroll reveal
    07. Back-to-top button
    08. Footer year
@@ -92,8 +92,10 @@
       if (!link) return;
       doc.querySelectorAll(".nav-link.active").forEach(function (active) {
         active.classList.remove("active");
+        active.removeAttribute("aria-current");
       });
       link.classList.add("active");
+      link.setAttribute("aria-current", "true");
     });
   }
 
@@ -107,24 +109,43 @@
     });
   }
 
-  /* ---------- 05. Project filtering ---------- */
+  /* ---------- 05. Project filtering ----------
+     Cards are filtered by their data-tags. Each group (featured /
+     more) is hidden when none of its cards match, so no empty
+     heading is left behind. Status is announced for screen readers. */
   var filterButtons = doc.querySelectorAll(".filter-btn");
   var projectCards = doc.querySelectorAll(".project-card");
+  var projectGroups = doc.querySelectorAll(".projects-group");
+  var filterStatus = doc.getElementById("filter-status");
 
   if (filterButtons.length && projectCards.length) {
     filterButtons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         var filter = btn.getAttribute("data-filter") || "all";
+        var visible = 0;
 
         filterButtons.forEach(function (b) {
-          b.classList.toggle("is-active", b === btn);
+          var active = b === btn;
+          b.classList.toggle("is-active", active);
+          b.setAttribute("aria-pressed", active ? "true" : "false");
         });
 
         projectCards.forEach(function (card) {
           var tags = (card.getAttribute("data-tags") || "").toLowerCase().split(/\s+/);
           var match = filter === "all" || tags.indexOf(filter) !== -1;
           card.classList.toggle("is-hidden", !match);
+          if (match) visible++;
         });
+
+        projectGroups.forEach(function (group) {
+          var anyVisible = group.querySelector(".project-card:not(.is-hidden)");
+          group.classList.toggle("is-hidden", !anyVisible);
+        });
+
+        if (filterStatus) {
+          filterStatus.textContent = visible + (visible === 1 ? " project" : " projects") +
+            " shown" + (filter === "all" ? "." : " for " + filter.replace(/-/g, " ") + ".");
+        }
       });
     });
   }
@@ -193,4 +214,50 @@
   /* ---------- 08. Footer year ---------- */
   var year = doc.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  /* ---------- 09. Print helper ----------
+     Browsers do not print the contents of a closed <details>, so a
+     printed or "Save as PDF" copy of the page would lose every project
+     detail. Open the project cards before printing and restore the
+     previous state afterwards. The certifications expander is left
+     closed on purpose: it is an 80-entry archive, not page content. */
+  var projectDetails = doc.querySelectorAll(".project-details");
+  var openedForPrint = [];
+
+  function openDetailsForPrint() {
+    /* Note: openedForPrint is *not* reset here. Both the print media
+       query and the beforeprint event can fire for the same print
+       action, and resetting would lose track of the cards to restore. */
+    projectDetails.forEach(function (d) {
+      if (!d.open && openedForPrint.indexOf(d) === -1) {
+        d.open = true;
+        openedForPrint.push(d);
+      }
+    });
+  }
+
+  function restoreDetailsAfterPrint() {
+    openedForPrint.forEach(function (d) {
+      d.open = false;
+    });
+    openedForPrint = [];
+  }
+
+  if (projectDetails.length) {
+    window.addEventListener("beforeprint", openDetailsForPrint);
+    window.addEventListener("afterprint", restoreDetailsAfterPrint);
+
+    if (window.matchMedia) {
+      var printQuery = window.matchMedia("print");
+      var onPrintChange = function (mql) {
+        if (mql.matches) openDetailsForPrint();
+        else restoreDetailsAfterPrint();
+      };
+      if (printQuery.addEventListener) {
+        printQuery.addEventListener("change", onPrintChange);
+      } else if (printQuery.addListener) {
+        printQuery.addListener(onPrintChange); /* Safari < 14 */
+      }
+    }
+  }
 })();
