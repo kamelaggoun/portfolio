@@ -37,7 +37,7 @@
   --surface-2: #eef2f6;
   --text: #0b1220;
   --text-secondary: #3f4a5c;
-  --text-muted: #66707f;
+  --text-muted: #606a78;   /* nudged from #66707f so muted text also clears WCAG AA on hover backgrounds */
   --border: #e2e8f0;
   --border-strong: #c9d3df;
   --accent: #0f766e;
@@ -105,7 +105,7 @@ a:hover { color: var(--accent-strong); }
 
 button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -114,7 +114,7 @@ h1, h2, h3, h4 {
 
 h2 { font-size: clamp(1.6rem, 3vw + 0.5rem, 2.15rem); }
 h3 { font-size: 1.15rem; }
-h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+h4, h5 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
 
 p { max-width: 65ch; }
 
@@ -339,7 +339,29 @@ p { max-width: 65ch; }
   outline-offset: 2px;
 }
 
-.header-actions { display: flex; align-items: center; }
+.header-actions { display: flex; align-items: center; gap: 0.5rem; }
+
+/* Persistent CV shortcut — recruiters should never have to hunt for it */
+.header-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 38px;
+  padding: 0 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.header-cv:hover {
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border-color: var(--accent);
+}
 
 .theme-toggle {
   display: none;
@@ -403,11 +425,19 @@ html.js .theme-toggle { display: inline-flex; }
   margin-bottom: 0.5rem;
 }
 
+.hero-positioning {
+  font-size: clamp(1.02rem, 1.7vw, 1.22rem);
+  color: var(--text);
+  max-width: 38ch;
+  margin-bottom: 0.8rem;
+  text-wrap: balance;
+}
+
 .hero-role {
   font-family: var(--font-mono);
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-size: clamp(0.82rem, 1.4vw, 0.95rem);
   color: var(--text-secondary);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1rem;
 }
 
 .hero-lead {
@@ -430,6 +460,27 @@ html.js .theme-toggle { display: inline-flex; }
   gap: 1rem 1.5rem;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.hero-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.hero-avail::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .hero-loc,
@@ -536,9 +587,21 @@ html.js .theme-toggle { display: inline-flex; }
 /* ---------- 08. About ---------- */
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1.5fr) minmax(0, 1fr);
   gap: 2.5rem;
   align-items: start;
+}
+
+.about-photo { margin: 0; width: 200px; }
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
 }
 
 .about-text p { color: var(--text-secondary); margin-bottom: 1rem; }
@@ -660,7 +723,7 @@ html.js .filters { display: flex; }
 .project-summary {
   display: grid;
   grid-template-columns: auto minmax(96px, 150px) 1fr auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   column-gap: 1.25rem;
   row-gap: 0.4rem;
   align-items: center;
@@ -680,7 +743,7 @@ html.js .filters { display: flex; }
 
 .project-thumb {
   grid-column: 2;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 4;
   width: 100%;
   height: auto;
   border: 1px solid var(--border);
@@ -692,6 +755,8 @@ html.js .filters { display: flex; }
   grid-column: 3;
   grid-row: 1;
   font-size: 1.15rem;
+  text-transform: none;
+  letter-spacing: -0.01em;
 }
 
 .project-tagline {
@@ -707,6 +772,25 @@ html.js .filters { display: flex; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+
+/* Data scale / headline figures — visible without opening the card */
+.project-metrics {
+  grid-column: 3;
+  grid-row: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.project-metric {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--text-secondary);
+  border-left: 2px solid var(--accent);
+  padding-left: 0.45rem;
 }
 
 .project-chevron {
@@ -736,7 +820,9 @@ html.js .filters { display: flex; }
   margin-bottom: 1.5rem;
 }
 
-.project-field h4 {
+.project-grid--two { grid-template-columns: repeat(2, 1fr); }
+
+.project-field h5 {
   color: var(--accent);
   margin-bottom: 0.5rem;
 }
@@ -898,7 +984,13 @@ html.js .filters { display: flex; }
 
 .cert-issuer { font-size: 0.85rem; color: var(--text-secondary); }
 
-.cert-link { font-size: 0.85rem; }
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  /* WCAG 2.2 target size minimum is 24x24 CSS px — the link text sits at 23px */
+  min-height: 24px;
+  font-size: 0.85rem;
+}
 
 /* Certifications — "view all" expander */
 .certs-more {
@@ -1124,6 +1216,165 @@ html.js .reveal.is-visible {
   transform: none;
 }
 
+/* ---------- 17b. What I do ---------- */
+.whatido-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+
+.whatido-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.whatido-card h3 { font-size: 1.05rem; margin-bottom: 0.55rem; }
+
+.whatido-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.1rem;
+}
+
+.whatido-list { display: grid; gap: 0.45rem; }
+
+.whatido-list li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.whatido-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ---------- 17c. Data-analysis workflow ---------- */
+.workflow {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.workflow-title { font-size: 1.05rem; margin-bottom: 1.1rem; }
+
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.35rem;
+}
+
+.workflow-steps li {
+  position: relative;
+  padding: 0.34rem 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.workflow-steps li:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  right: -1.05rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
+.workflow-tools {
+  margin-top: 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ---------- 17d. Project groups (featured vs more) ---------- */
+.projects-group + .projects-group { margin-top: 2.75rem; }
+
+/* Applied by js/script.js when a filter hides every card in the group */
+.projects-group.is-hidden { display: none; }
+
+.projects-group-head { margin-bottom: 1.15rem; }
+
+.projects-group-title {
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.projects-group-lead {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.projects-list--featured { gap: 1.35rem; }
+
+.projects-list--featured .project-summary {
+  grid-template-columns: auto minmax(160px, 210px) 1fr auto;
+  padding: 1.5rem;
+}
+
+.projects-list--featured .project-title { font-size: 1.28rem; }
+
+.projects-list--more .project-summary {
+  grid-template-columns: auto minmax(72px, 104px) 1fr auto;
+}
+
+/* ---------- 17e. SQL excerpt ---------- */
+.project-sql { margin-bottom: 1.5rem; }
+
+.project-sql h5 { color: var(--accent); margin-bottom: 0.6rem; }
+
+.project-sql h5 code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.project-sql pre {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.project-sql code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  white-space: pre;
+}
+
+/* ---------- 17f. Narrow desktop / tablet tuning ---------- */
+@media (max-width: 1080px) {
+  .nav-links { gap: 0.85rem; }
+  .nav-link { font-size: 0.85rem; }
+}
+
+@media (max-width: 1000px) {
+  .about-grid { grid-template-columns: auto minmax(0, 1fr); }
+  .about-side { grid-column: 1 / -1; }
+}
+
 /* ---------- 18. Focus states & reduced motion ---------- */
 :focus-visible {
   outline: 3px solid var(--accent);
@@ -1196,23 +1447,40 @@ html.js .reveal.is-visible {
   .about-grid { grid-template-columns: 1fr; }
 
   /* Project summary simplifies */
-  .project-summary {
+  .project-summary,
+  .projects-list--featured .project-summary,
+  .projects-list--more .project-summary {
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 1.25rem;
   }
   .project-thumb { grid-column: 1 / -1; grid-row: 1; margin-bottom: 0.6rem; }
   .project-index { grid-column: 1; grid-row: 2; align-self: center; }
-  .project-title { grid-column: 2; grid-row: 2; }
+  .project-title { grid-column: 2; grid-row: 2; font-size: 1.15rem; }
   .project-chevron { grid-column: 3; grid-row: 2; margin-top: 0; }
   .project-tagline { grid-column: 2 / -1; grid-row: 3; }
   .project-tags { grid-column: 2 / -1; grid-row: 4; }
+  .project-metrics { grid-column: 1 / -1; grid-row: 5; }
 
   .project-grid { grid-template-columns: 1fr; }
+
+  /* About: photo beside text, facts full width */
+  .about-photo { width: 150px; }
+
+  /* Hero spacing tightens */
+  .hero-positioning { max-width: none; }
+
+  /* Header CV button becomes compact */
+  .header-cv { padding: 0 0.6rem; }
 }
 
 @media (max-width: 560px) {
   .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
   .education-list { grid-template-columns: 1fr; }
+  .logo-name { display: none; }
+  .about-photo { width: 120px; }
+  .workflow-steps { gap: 0.5rem 1.2rem; }
+  .project-sql pre { padding: 0.85rem 0.9rem; }
 }
 
 /* ---------- 20. Print ---------- */
@@ -1220,6 +1488,7 @@ html.js .reveal.is-visible {
   .site-header,
   .hero-visual,
   .filters,
+  .workflow-steps li::after,
   .back-to-top,
   .theme-toggle,
   .nav-toggle,
@@ -1227,5 +1496,16 @@ html.js .reveal.is-visible {
 
   body { background: #fff; color: #000; }
 
+  /* Scroll-reveal is a screen-only effect: force every card visible so
+     nothing prints blank when the page is printed without scrolling. */
+  html.js .reveal,
+  html.js .reveal.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   .section { border-bottom: 1px solid #ccc; }
+  .project-sql pre { border: 1px solid #ccc; background: #fff; }
+  .project-card, .whatido-card, .skill-group { box-shadow: none; }
 }
